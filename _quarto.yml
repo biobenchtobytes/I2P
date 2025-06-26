@@ -34,11 +34,11 @@ format:
   html:
     theme: flatly
     css: theme.css
-  pdf:
-    documentclass: scrreprt
-
+    
 page-footer: | 
   Material developed by Bench2Bytes © 2025
 # cover-image: pages/images/logo.png
 
 bread-crumbs: true
+execute:
+  freeze: auto

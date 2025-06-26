@@ -1,0 +1,11 @@
+{
+  "hash": "e75adcbbc5fab2bd106ce112629c5e52",
+  "result": {
+    "markdown": "# COURSE OVERVIEW {.unnumbered}\n\nWelcome to the Intro2Python workshop! Here, you will find the materials we discuss during the workshops theoretical sessions. This material should be used in conjunction with the corresponding practical exercise notebooks made available to you during the workshop.\n\n\n### DAY 1: FUNDAMENTALS {.unnumbered}\n\n::::: {.columns}\n:::: {.column width=\"50%\"}\nSession 1\n\n- [ ] Python fundamentals\n- [ ] Built-in functions\n- [ ] Libraries\n- [ ] Variables & types\n::::\n\n:::: {.column width=\"50%\"}\nSession 2\n\n- [ ] Collections\n- [ ] Program flow control\n::::\n:::::\n\n::: {.cell execution_count=1}\n\n::: {.cell-output .cell-output-stdout}\n```\n \n \n```\n:::\n:::\n\n\n### DAY 2: DEALING WITH DATA {.unnumbered}\n\n::::: {.columns}\n:::: {.column width=\"50%\"}\nSession 3\n\n- [ ] Data wrangling\n- [ ] Data tidying\n- [ ] Data polishing\n::::\n\n:::: {.column width=\"50%\"}\nSession 4\n\n- [ ] Data visualisation\n- [ ] Resources\n::::\n:::::\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

@@ -42,8 +42,6 @@ import pandas as pd
 proteins = pd.read_csv('data/example_proteins.csv')
 ```
 
-## Seaborn 🫱🏻‍🫲🏻 Matplotlib
-
 Once imported, seaborn gives us access to many simple plots out of the box.
 
 ![](images/plots.jpg){width="1050" fig-align="center"} 
@@ -77,7 +75,6 @@ sns.scatterplot(
 )
 ```
 
-## The simple scatterplot
 
 We can add additional classifiers to separate the data by colour (```hue```) or ```style```.
 
@@ -164,7 +161,6 @@ h = sns.displot(
 h.fig.set_size_inches(7, 3.7, 10.5)
 ```
 
-## The humble histogram
 
 And for a histogram:
 
@@ -284,7 +280,6 @@ plt.show()
 ::::
 :::
 
-## Choosing colours
 
 ```Matplotlib``` provides a variety of [built-in color palettes](https://matplotlib.org/stable/users/explain/colors/colormaps.html) for different types of data:
 
