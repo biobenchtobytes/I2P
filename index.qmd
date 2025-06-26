@@ -1,0 +1,48 @@
+# COURSE OVERVIEW {.unnumbered}
+
+Welcome to the Intro2Python workshop! Here, you will find the materials we discuss during the workshops theoretical sessions. This material should be used in conjunction with the corresponding practical exercise notebooks made available to you during the workshop.
+
+
+### DAY 1: FUNDAMENTALS {.unnumbered}
+
+::::: {.columns}
+:::: {.column width="50%"}
+Session 1
+
+- [ ] Python fundamentals
+- [ ] Built-in functions
+- [ ] Libraries
+- [ ] Variables & types
+::::
+
+:::: {.column width="50%"}
+Session 2
+
+- [ ] Collections
+- [ ] Program flow control
+::::
+:::::
+```{python}
+#| echo: False
+print(' ')
+print(' ')
+```
+
+### DAY 2: DEALING WITH DATA {.unnumbered}
+
+::::: {.columns}
+:::: {.column width="50%"}
+Session 3
+
+- [ ] Data wrangling
+- [ ] Data tidying
+- [ ] Data polishing
+::::
+
+:::: {.column width="50%"}
+Session 4
+
+- [ ] Data visualisation
+- [ ] Resources
+::::
+:::::

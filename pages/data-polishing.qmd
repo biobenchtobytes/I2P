@@ -1,0 +1,147 @@
+
+# Polishing {.unnumbered}
+
+![](images/wrangling.png){width="650" fig-align="center"} 
+
+<p font-size=55pt align="center">
+**Cleaned data may require additional polishing.**
+</p>
+
+This might involve combining datasets from multiple sources, transforming, and imputing or removing missing values.
+
+```{python}
+#| echo: false
+#| output: false
+
+import pandas as pd
+```
+
+## Combining
+
+Dataframes can be combined along the vertical axis using ```concat()```.
+
+![](images/concat.png){width="450" fig-align="center"} 
+
+::: {.columns}
+::: {.column}
+```{python}
+#| echo: True
+df1 = pd.DataFrame({'A': ['purple', 'red', 'orange'], 
+                    'B': [1, 2, 3], 
+                    'C': ['C0', 'C1', 'C2'],
+                    'D': ['dinosaur', 'drain', 'draw']})
+df1
+```
+:::
+::: {.column}
+```{python}
+#| echo: True
+df2 = pd.DataFrame({'A': ['green', 'blue', 'yellow'], 
+                    'B': [4, 5, 6], 
+                    'C': ['C0', 'C1', 'C2'],
+                    'E': ['elephant', 'empty', 'easel']})
+df2
+```
+:::
+:::
+
+::: {.columns}
+::: {.column}
+```{python}
+#| echo: True
+#| output: False
+# Concatenate the two DataFrames
+result = pd.concat([df1, df2])
+result
+```
+:::
+::: {.column}
+```{python}
+#| echo: False
+# Concatenate the two DataFrames along rows
+concatenated = pd.concat([df1, df2])
+concatenated
+```
+:::
+:::
+
+Dataframes can be combined along the horizontal axis using ```merge()```.
+
+![](images/merge.png){width="450" fig-align="center"} 
+
+```{python}
+#| echo: True
+# Merge the two DataFrames along rows
+merged = pd.merge(df1, df2, on='C')
+merged
+```
+
+```{python}
+#| echo: True
+# Merge the two DataFrames along rows
+merged = pd.merge(df1, df2, on='C', suffixes=['_df1', '_df2'])
+merged
+```
+
+```{python}
+#| echo: True
+#| output: False
+# Merge the two DataFrames along rows
+merged = pd.merge(df1, df2, on='C', suffixes=['_df1', '_df2'])
+merged
+```
+
+:::{.callout-note}
+###  Learn more about the variety of join operations via the [documentation](https://pandas.pydata.org/docs/user_guide/merging.html).
+:::
+
+
+## Transforming
+
+Datasets often need to be transformed between wide and long form data. 
+
+![](images/pivot.png){width="450" fig-align="center"} 
+
+```{python}
+#| echo: False
+proteins = pd.read_csv('data/example_proteins.csv')
+```
+
+Pandas provides this functionality in the form of ```pd.pivot``` for long to wide:
+
+```{python}
+#| echo: True
+#| output: False
+pd.pivot_table(
+        proteins, 
+        index='Subcellular Location', 
+        columns=['Function'], 
+        values='Molecular Weight (kDa)' 
+              )
+```
+
+::: {.callout-note}
+### The equivalent function for wide to long is ```pd.melt```.
+:::
+
+
+## Writing
+
+Just as we can read a variety of data types using pandas, we can similarly save pandas dataframes.
+
+![](images/pandas-save.png){width="500" fig-align="center"} 
+
+```{python}
+#| echo: True
+# loc_counts.to_csv('data/example_grouped.csv')
+```
+
+## In practice
+
+
+::: {.callout-caution}
+
+### Exercises
+
+3.4 Combining datasets
+:::

@@ -1,0 +1,44 @@
+project:
+  type: book
+
+
+book:
+  title: "Intro2Python"
+  author: ""
+  date: ""
+  chapters:
+    - index.qmd
+    - part: "DAY 1: Fundamentals"
+      chapters: 
+        - pages/functions.qmd
+        - pages/libraries.qmd
+        - pages/variables-types.qmd
+        - pages/collections.qmd
+        - pages/program-flow-control.qmd
+    - part: "DAY 2: Dealing with Data"
+      chapters: 
+        - pages/data-wrangling.qmd
+        - pages/data-processing.qmd
+        - pages/data-polishing.qmd
+        - pages/data-viz.qmd
+    - pages/resources.qmd
+  sidebar:
+    search: true
+    logo: pages/images/logo_transparent.png
+    style: docked
+    background: dark
+  navbar:
+    background: dark
+
+format:
+  html:
+    theme: flatly
+    css: theme.css
+  pdf:
+    documentclass: scrreprt
+
+page-footer: | 
+  Material developed by Bench2Bytes © 2025
+# cover-image: pages/images/logo.png
+
+bread-crumbs: true

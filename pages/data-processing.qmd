@@ -1,0 +1,240 @@
+# Tidying {.unnumbered}
+
+![](images/wrangling.png){width="650" fig-align="center"} 
+
+<p font-size=55pt align="center">
+**Tidying hones in on just the data you want to analyse.** 
+</p>
+
+The process includes sorting, filtering, and preprocessing raw data so that it can be easily analyzed and visualised.
+
+
+```{python}
+#| echo: false
+#| output: false
+# import pandas, aliased as pd
+import pandas as pd
+
+# Import an Excel file called "example" from the data folder
+df = pd.read_csv('data/clean_data.csv')
+```
+
+## Sorting
+
+We can sort a dataframe based on the values in one (or more) columns by giving a list to ```.sort_values()```.
+
+```{python}
+#| echo: True
+df.sort_values(['protein', 'donor_id', 'time_h'], inplace=True)
+df.head(5)
+```
+
+## Filtering based on values
+
+We can select entries based on their value in a specific column using *comparison operators* like ```>``` , ```<``` and ```==```. 
+```{python}
+#| echo: False
+df.sort_index(inplace=True)
+```
+
+```{python}
+#| echo: True
+df[df['molecular_weight_kda'] > 100].head(3)
+```
+
+::: {.callout-note}
+### You can think about this as *"the dataframe where the dataframe in the XX column is equal to YY"*.
+:::
+
+We can select entries based on their value in a specific column using *comparison operators* like ```>``` , ```<``` and ```==```.  
+
+
+```{python}
+#| echo: True
+#| output: False
+df[df['molecular_weight_kda'] > 100].head(3)
+```
+
+::: {.callout-important}
+### Note that this is creating a *view* of the dataframe. To use the filtered version in other operations, you need to assign a new variable and create a ```copy```.
+:::
+```{python}
+#| echo: True
+len(df)
+```
+
+```{python}
+#| echo: True
+len(df[df['molecular_weight_kda'] > 100])
+```
+
+```{python}
+#| echo: True
+len(df)
+```
+
+```{python}
+#| echo: True
+new_dataframe = df[df['molecular_weight_kda'] > 100].copy()
+len(new_dataframe)
+```
+
+We can select entries based on their value in a specific column using *comparison operators* like ```>``` , ```<``` and ```==```. 
+
+```{python}
+#| echo: True
+#| output: False
+df[df['molecular_weight_kda'] > 100].head(3)
+```
+
+```{python}
+#| echo: False
+print('  ')
+```
+
+We can chain multiple filters using ```and``` (```&```) notion.  
+
+```{python}
+#| echo: True
+#| output: True
+df[(df['molecular_weight_kda'] > 100) & (df['subcellular_location'] != 'Cytoplasm')].head(2)
+```
+
+## Handling missing values 
+
+We can filter for rows containing missing values using ```.isna()``` or ```.isnull()```.
+
+```{python}
+#| echo: True
+#| output: True
+df[df['expression_log2'].isna()].head(3)
+```
+```{python}
+#| echo: False
+print('  ')
+```
+
+Missing values can be removed using ```.dropna()```.
+```{python}
+#| echo: True
+#| output: True
+df.dropna(axis=0, how='all', subset=['expression_log2']).head(2)
+```
+
+Alternatively, you may wish to fill missing values specifically using ```.fillna()```
+
+```{python}
+#| echo: True
+#| output: True
+
+df.fillna(0, inplace=True) # Works on any datatype
+df.head(3)
+```
+
+::: {.callout-note}
+### Pandas also provides some limited interpolation using ```.interpolate()```, however purpose-built libraries provide more sophisticated options.
+:::
+
+## Basic arithmetic
+
+We can do arithmetic on whole columns simultaneously, like calculating the ```mean``` or ```sum``` of numerical values using inbuilt functions or mathematical operators.
+
+```{python}
+#| echo: False
+print('  ')
+```
+```{python}
+#| echo: True
+df.count()
+```
+
+```{python}
+#| echo: False
+print('  ')
+```
+
+```{python}
+#| echo: True
+df.mean()
+```
+
+We can do arithmetic on whole columns simultaneously, like calculating the ```mean``` or ```sum``` of numerical values using inbuilt functions or mathematical operators.
+
+::::: {.columns}
+::: {.column width="45%"}
+```{python}
+#| echo: True
+df['molecular_weight_kda']
+```
+::: 
+::: {.column width="55%"}
+```{python}
+#| echo: True
+df['molecular_weight_kda'] * 1000
+```
+::: 
+:::::
+
+We can do arithmetic on whole columns simultaneously, like calculating the ```mean``` or ```sum``` of numerical values using inbuilt functions or mathematical operators.
+
+```{python}
+#| echo: True
+df['mw_daltons'] = df['molecular_weight_kda'] * 1000
+df.head(3)
+```
+
+## Operating on groups
+
+What if we want to perform arithmetic not on the whole dataframe, but on subsets? We can operate on chunks of a dataframe simultaneously using ```groupby```.
+
+
+![](images/groupby.png){width="600" fig-align="center"} 
+
+```{python}
+#| echo: True
+#| output: False
+loc_counts = df.groupby(['subcellular_location']).count()[['protein']]
+loc_counts
+```
+
+```{python}
+#| echo: False
+#| output: True
+df.groupby(['subcellular_location']).count()[['protein']].head(3)
+```
+
+What if we want to perform arithmetic not on the whole dataframe, but on subsets? We can operate on chunks of a dataframe simultaneously using ```groupby```.
+
+
+![](images/groupby.png){width="600" fig-align="center"} 
+
+::: {.callout-note}
+### Think of this like creating filtered copies of the dataframe, conducting the operation, then combining them all back together again!
+:::
+
+::: {.callout-note}
+### ```groupby``` is an iterator object which is not created until it is evaluated. Operations used with groupby create views and are *not* operating on the original dataframe. 
+:::
+
+We can access each *chunk* of the dataframe using a ```for``` loop:
+
+```{python}
+#| echo: True
+
+for loc, data in df.groupby(['subcellular_location']):
+  print(
+    f'The average molecular weight of proteins in the {loc} is \
+    {int(data["molecular_weight_kda"].mean())} kDa.')
+
+```
+
+## In practice
+
+::: {.callout-caution}
+### Exercises
+
+3.2 Filtering and arithmetic
+
+3.3 Grouped operations
+
+:::

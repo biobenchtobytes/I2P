@@ -1,0 +1,47 @@
+Protein Name	Gene Name	Molecular Weight (kDa)	Function	Subcellular Location
+Hemoglobin	HBB	64.5	Oxygen transport	Cytoplasm
+Actin	ACTA1	42.0	Cell structure	Cytoplasm
+Collagen	COL1A1	300.0	Structural support	Extracellular
+Insulin	INS	5.8	Regulation of glucose levels	Secreted
+Myosin	MYH7	220.0	Muscle contraction	Cytoplasm
+Cytochrome c	CYC1	12.4	Electron transport	Mitochondria
+Keratin	KRT18	52.0	Structural support	Cytoplasm
+Albumin	ALB	66.5	Osmotic pressure regulation	Secreted
+Tubulin	TUBA1B	50.5	Cell structure	Cytoplasm
+Ferritin	FTH1	474.0	Iron storage	Cytoplasm
+Catalase	CAT	60.0	Breakdown of hydrogen peroxide	Peroxisome
+GAPDH	GAPDH	36.0	Glycolysis	Cytoplasm
+Fibrinogen	FGA	340.0	Blood clotting	Plasma
+Elastin	ELN	70.0	Elasticity of tissues	Extracellular
+Histone H1	H1F0	21.0	DNA packaging	Nucleus
+Lactase	LCT	160.0	Breakdown of lactose	Secreted
+p53	TP53	53.0	Tumor suppression	Nucleus
+Chymotrypsin	CTRC	25.0	Protein digestion	Secreted
+HSP70	HSPA1A	70.0	Protein folding	Cytoplasm
+Alpha-amylase	AMY1A	56.0	Starch digestion	Secreted
+Hexokinase	HK1	102.0	Glycolysis	Cytoplasm
+Collagen type II	COL2A1	285.0	Structural support	Extracellular
+Beta-actin	ACTB	42.0	Cell structure	Cytoplasm
+Troponin T	TTN	37.0	Muscle contraction	Cytoplasm
+Ubiquitin	UBB	8.6	Protein degradation	Cytoplasm
+Laminin	LAMA2	850.0	Cell adhesion	Extracellular
+Integrin	ITGB1	88.0	Cell adhesion	Membrane
+Peroxiredoxin	PRDX1	22.0	Reduction of peroxides	Cytoplasm
+Caspase-3	CASP3	32.0	Apoptosis	Cytoplasm
+SOD1	SOD1	32.5	Superoxide breakdown	Cytoplasm
+Transferrin	TF	77.0	Iron transport	Secreted
+Glucagon	GCG	3.5	Regulation of glucose levels	Secreted
+Thrombin	F2	37.0	Blood clotting	Secreted
+Neurofilament	NEFH	110.0	Neuronal structure	Cytoplasm
+Calmodulin	CALM1	16.8	Calcium signaling	Cytoplasm
+Glycogen phosphorylase	PYGM	97.0	Glycogen breakdown	Cytoplasm
+Ras protein	HRAS	21.0	Signal transduction	Cytoplasm
+Collagen type III	COL3A1	300.0	Structural support	Extracellular
+Collagen type IV	COL4A1	185.0	Structural support	Extracellular
+Pyruvate kinase	PKLR	57.0	Glycolysis	Cytoplasm
+Adenylate kinase	AK1	21.7	ATP regeneration	Cytoplasm
+Collagen type V	COL5A1	184.0	Structural support	Extracellular
+Collagen type VI	COL6A1	110.0	Structural support	Extracellular
+Laminin beta 2	LAMB2	210.0	Cell adhesion	Extracellular
+NADH dehydrogenase	ND1	40.0	Electron transport	Mitochondria
+ATP synthase	ATP5F1	55.0	ATP synthesis	Mitochondria

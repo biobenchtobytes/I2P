@@ -1,0 +1,691 @@
+,protein,molecular_weight_kda,function,subcellular_location,expression_log2,time_h,donor_id,protein_name,gene
+0,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,0.1117814165932862,2,A17362,HBB,Hemoglobin
+1,ACTA1_Actin,42.0,Cell structure,Cytoplasm,0.2037400831834617,2,A17362,ACTA1,Actin
+2,COL1A1_Collagen,300.0,Structural support,Extracellular,,2,A17362,COL1A1,Collagen
+3,INS_Insulin,5.8,Regulation of glucose levels,Secreted,0.3511829964231454,2,A17362,INS,Insulin
+4,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,-1.274221458,2,A17362,MYH7,Myosin
+5,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,1.1396936422954709,2,A17362,CYC1,Cytochrome c
+6,KRT18_Keratin,52.0,Structural support,Cytoplasm,1.5668528270612008,2,A17362,KRT18,Keratin
+7,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,1.1071070942512828,2,A17362,ALB,Albumin
+8,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,-1.613590288,2,A17362,TUBA1B,Tubulin
+9,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,1.3218424946620826,2,A17362,FTH1,Ferritin
+10,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,0.4163501353785888,2,A17362,CAT,Catalase
+11,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,1.081335788442935,2,A17362,GAPDH,GAPDH
+12,FGA_Fibrinogen,340.0,Blood clotting,Plasma,1.359424755029599,2,A17362,FGA,Fibrinogen
+13,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,-0.898250392,2,A17362,ELN,Elastin
+14,H1F0_Histone H1,21.0,DNA packaging,Nucleus,0.4832796981650684,2,A17362,H1F0,Histone H1
+15,LCT_Lactase,160.0,Breakdown of lactose,Secreted,-1.864088615,2,A17362,LCT,Lactase
+16,TP53_p53,53.0,Tumor suppression,Nucleus,1.2029298617798294,2,A17362,TP53,p53
+17,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,0.2663917763311763,2,A17362,CTRC,Chymotrypsin
+18,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,1.4406074839970673,2,A17362,HSPA1A,HSP70
+19,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,-0.581858562,2,A17362,AMY1A,Alpha-amylase
+20,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,,2,A17362,HK1,Hexokinase
+21,COL2A1_Collagen type II,285.0,Structural support,Extracellular,0.1356693063642713,2,A17362,COL2A1,Collagen type II
+22,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,-0.751547934,2,A17362,ACTB,Beta-actin
+23,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,-0.684876463,2,A17362,TTN,Troponin T
+24,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,-0.550696512,2,A17362,UBB,Ubiquitin
+25,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,-0.823458649,2,A17362,LAMA2,Laminin
+26,ITGB1_Integrin,88.0,Cell adhesion,Membrane,1.1270864552087585,2,A17362,ITGB1,Integrin
+27,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,-1.118103789,2,A17362,PRDX1,Peroxiredoxin
+28,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,-1.193697487,2,A17362,CASP3,Caspase-3
+29,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,1.8726483374266425,2,A17362,SOD1,SOD1
+30,TF_Transferrin,77.0,Iron transport,Secreted,-1.574155082,2,A17362,TF,Transferrin
+31,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,-1.426451703,2,A17362,GCG,Glucagon
+32,F2_Thrombin,37.0,Blood clotting,Secreted,-0.255042903,2,A17362,F2,Thrombin
+33,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,1.5772978680901346,2,A17362,NEFH,Neurofilament
+34,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,1.9276214202811264,2,A17362,CALM1,Calmodulin
+35,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,-1.310199536,2,A17362,PYGM,Glycogen phosphorylase
+36,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,1.0228524856921175,2,A17362,HRAS,Ras protein
+37,COL3A1_Collagen type III,300.0,Structural support,Extracellular,-0.214410125,2,A17362,COL3A1,Collagen type III
+38,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,-0.353199953,2,A17362,COL4A1,Collagen type IV
+39,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,-1.718810013,2,A17362,PKLR,Pyruvate kinase
+40,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,0.4197693145709364,2,A17362,AK1,Adenylate kinase
+41,COL5A1_Collagen type V,184.0,Structural support,Extracellular,1.874513116120501,2,A17362,COL5A1,Collagen type V
+42,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,0.1434322114536033,2,A17362,COL6A1,Collagen type VI
+43,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,-1.547600352,2,A17362,LAMB2,Laminin beta 2
+44,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,-0.955409759,2,A17362,ND1,NADH dehydrogenase
+45,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,1.7948760263382415,2,A17362,ATP5F1,ATP synthase
+46,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,-1.704550703,2,B24923,HBB,Hemoglobin
+47,ACTA1_Actin,42.0,Cell structure,Cytoplasm,-0.97446515,2,B24923,ACTA1,Actin
+48,COL1A1_Collagen,300.0,Structural support,Extracellular,0.3018154807197604,2,B24923,COL1A1,Collagen
+49,INS_Insulin,5.8,Regulation of glucose levels,Secreted,1.0147809168328337,2,B24923,INS,Insulin
+50,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,-1.47980397,2,B24923,MYH7,Myosin
+51,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,1.655131336600185,2,B24923,CYC1,Cytochrome c
+52,KRT18_Keratin,52.0,Structural support,Cytoplasm,0.1634205169333342,2,B24923,KRT18,Keratin
+53,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,-0.199016798,2,B24923,ALB,Albumin
+54,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,0.4603213708922187,2,B24923,TUBA1B,Tubulin
+55,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,-1.896878127,2,B24923,FTH1,Ferritin
+56,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,-1.526752247,2,B24923,CAT,Catalase
+57,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,0.1713128706427347,2,B24923,GAPDH,GAPDH
+58,FGA_Fibrinogen,340.0,Blood clotting,Plasma,-1.835909091,2,B24923,FGA,Fibrinogen
+59,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,1.142176708899846,2,B24923,ELN,Elastin
+60,H1F0_Histone H1,21.0,DNA packaging,Nucleus,-0.75625402,2,B24923,H1F0,Histone H1
+61,LCT_Lactase,160.0,Breakdown of lactose,Secreted,0.2938825139435552,2,B24923,LCT,Lactase
+62,TP53_p53,53.0,Tumor suppression,Nucleus,0.1047039872732993,2,B24923,TP53,p53
+63,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,1.633774671041491,2,B24923,CTRC,Chymotrypsin
+64,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,0.8018704638633407,2,B24923,HSPA1A,HSP70
+65,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,-1.530849635,2,B24923,AMY1A,Alpha-amylase
+66,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,-0.306580873,2,B24923,HK1,Hexokinase
+67,COL2A1_Collagen type II,285.0,Structural support,Extracellular,0.4189978909071818,2,B24923,COL2A1,Collagen type II
+68,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,-1.203828935,2,B24923,ACTB,Beta-actin
+69,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,0.570603736,2,B24923,TTN,Troponin T
+70,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,-1.573670175,2,B24923,UBB,Ubiquitin
+71,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,0.3582983486006501,2,B24923,LAMA2,Laminin
+72,ITGB1_Integrin,88.0,Cell adhesion,Membrane,1.9927688505994905,2,B24923,ITGB1,Integrin
+73,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,0.2287212089702004,2,B24923,PRDX1,Peroxiredoxin
+74,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,1.0723782101343635,2,B24923,CASP3,Caspase-3
+75,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,1.0086744600787911,2,B24923,SOD1,SOD1
+76,TF_Transferrin,77.0,Iron transport,Secreted,-0.73567037,2,B24923,TF,Transferrin
+77,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,0.4941273867341134,2,B24923,GCG,Glucagon
+78,F2_Thrombin,37.0,Blood clotting,Secreted,1.458131168844484,2,B24923,F2,Thrombin
+79,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,0.5939700785377076,2,B24923,NEFH,Neurofilament
+80,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,1.528342767153049,2,B24923,CALM1,Calmodulin
+81,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,-1.95416134,2,B24923,PYGM,Glycogen phosphorylase
+82,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,-0.564590012,2,B24923,HRAS,Ras protein
+83,COL3A1_Collagen type III,300.0,Structural support,Extracellular,0.5436483854146203,2,B24923,COL3A1,Collagen type III
+84,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,-1.042928736,2,B24923,COL4A1,Collagen type IV
+85,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,1.3762007636912954,2,B24923,PKLR,Pyruvate kinase
+86,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,-1.937586679,2,B24923,AK1,Adenylate kinase
+87,COL5A1_Collagen type V,184.0,Structural support,Extracellular,1.5905681639628293,2,B24923,COL5A1,Collagen type V
+88,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,0.716929689,2,B24923,COL6A1,Collagen type VI
+89,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,-1.674544302,2,B24923,LAMB2,Laminin beta 2
+90,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,-0.837670026,2,B24923,ND1,NADH dehydrogenase
+91,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,0.5989346335239425,2,B24923,ATP5F1,ATP synthase
+92,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,1.2702569301158722,2,A39917,HBB,Hemoglobin
+93,ACTA1_Actin,42.0,Cell structure,Cytoplasm,1.1064990373391916,2,A39917,ACTA1,Actin
+94,COL1A1_Collagen,300.0,Structural support,Extracellular,-1.719276861,2,A39917,COL1A1,Collagen
+95,INS_Insulin,5.8,Regulation of glucose levels,Secreted,-0.436353838,2,A39917,INS,Insulin
+96,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,-0.140660473,2,A39917,MYH7,Myosin
+97,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,-1.70657295,2,A39917,CYC1,Cytochrome c
+98,KRT18_Keratin,52.0,Structural support,Cytoplasm,-1.228666041,2,A39917,KRT18,Keratin
+99,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,1.4303788303743468,2,A39917,ALB,Albumin
+100,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,0.1204107348942016,2,A39917,TUBA1B,Tubulin
+101,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,0.8506955373408429,2,A39917,FTH1,Ferritin
+102,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,1.089075008799092,2,A39917,CAT,Catalase
+103,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,-0.728160666,2,A39917,GAPDH,GAPDH
+104,FGA_Fibrinogen,340.0,Blood clotting,Plasma,0.7247505336028985,2,A39917,FGA,Fibrinogen
+105,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,0.2011949205340912,2,A39917,ELN,Elastin
+106,H1F0_Histone H1,21.0,DNA packaging,Nucleus,1.984345002224512,2,A39917,H1F0,Histone H1
+107,LCT_Lactase,160.0,Breakdown of lactose,Secreted,0.5064278935685733,2,A39917,LCT,Lactase
+108,TP53_p53,53.0,Tumor suppression,Nucleus,0.4988033948235713,2,A39917,TP53,p53
+109,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,0.5585671794594078,2,A39917,CTRC,Chymotrypsin
+110,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,-0.855695385,2,A39917,HSPA1A,HSP70
+111,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,1.6322555983794187,2,A39917,AMY1A,Alpha-amylase
+112,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,1.3338838063131733,2,A39917,HK1,Hexokinase
+113,COL2A1_Collagen type II,285.0,Structural support,Extracellular,-0.994424417,2,A39917,COL2A1,Collagen type II
+114,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,1.2136066247019217,2,A39917,ACTB,Beta-actin
+115,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,-1.467643115,2,A39917,TTN,Troponin T
+116,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,-1.79310276,2,A39917,UBB,Ubiquitin
+117,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,-0.736814966,2,A39917,LAMA2,Laminin
+118,ITGB1_Integrin,88.0,Cell adhesion,Membrane,-0.732403365,2,A39917,ITGB1,Integrin
+119,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,0.4805092752441333,2,A39917,PRDX1,Peroxiredoxin
+120,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,0.8622531507555831,2,A39917,CASP3,Caspase-3
+121,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,,2,A39917,SOD1,SOD1
+122,TF_Transferrin,77.0,Iron transport,Secreted,-0.355453194,2,A39917,TF,Transferrin
+123,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,-1.54236962,2,A39917,GCG,Glucagon
+124,F2_Thrombin,37.0,Blood clotting,Secreted,1.7524969892931948,2,A39917,F2,Thrombin
+125,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,-0.246225099,2,A39917,NEFH,Neurofilament
+126,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,1.5552688197888336,2,A39917,CALM1,Calmodulin
+127,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,-0.853061668,2,A39917,PYGM,Glycogen phosphorylase
+128,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,1.7434927362589296,2,A39917,HRAS,Ras protein
+129,COL3A1_Collagen type III,300.0,Structural support,Extracellular,-0.593344571,2,A39917,COL3A1,Collagen type III
+130,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,-1.719847751,2,A39917,COL4A1,Collagen type IV
+131,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,0.8907449243655972,2,A39917,PKLR,Pyruvate kinase
+132,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,-0.850095894,2,A39917,AK1,Adenylate kinase
+133,COL5A1_Collagen type V,184.0,Structural support,Extracellular,1.825643222387772,2,A39917,COL5A1,Collagen type V
+134,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,1.0392001678506442,2,A39917,COL6A1,Collagen type VI
+135,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,-0.641015445,2,A39917,LAMB2,Laminin beta 2
+136,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,0.6521548155196446,2,A39917,ND1,NADH dehydrogenase
+137,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,1.4597030218601863,2,A39917,ATP5F1,ATP synthase
+138,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,-2.320557969,4,A17362,HBB,Hemoglobin
+139,ACTA1_Actin,42.0,Cell structure,Cytoplasm,2.1200477581253763,4,A17362,ACTA1,Actin
+140,COL1A1_Collagen,300.0,Structural support,Extracellular,3.6587505723060314,4,A17362,COL1A1,Collagen
+141,INS_Insulin,5.8,Regulation of glucose levels,Secreted,0.2544605851742778,4,A17362,INS,Insulin
+142,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,0.8268268149396301,4,A17362,MYH7,Myosin
+143,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,2.8487963675567887,4,A17362,CYC1,Cytochrome c
+144,KRT18_Keratin,52.0,Structural support,Cytoplasm,-3.53722143,4,A17362,KRT18,Keratin
+145,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,2.092255475721891,4,A17362,ALB,Albumin
+146,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,-2.809723401,4,A17362,TUBA1B,Tubulin
+147,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,3.916863020734264,4,A17362,FTH1,Ferritin
+148,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,-3.123081191,4,A17362,CAT,Catalase
+149,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,-3.158513697,4,A17362,GAPDH,GAPDH
+150,FGA_Fibrinogen,340.0,Blood clotting,Plasma,2.983351709738725,4,A17362,FGA,Fibrinogen
+151,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,1.8266508232248,4,A17362,ELN,Elastin
+152,H1F0_Histone H1,21.0,DNA packaging,Nucleus,1.5829090861398214,4,A17362,H1F0,Histone H1
+153,LCT_Lactase,160.0,Breakdown of lactose,Secreted,-3.759341486,4,A17362,LCT,Lactase
+154,TP53_p53,53.0,Tumor suppression,Nucleus,0.5955621263097948,4,A17362,TP53,p53
+155,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,-0.978865135,4,A17362,CTRC,Chymotrypsin
+156,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,-1.419456281,4,A17362,HSPA1A,HSP70
+157,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,2.189742676829028,4,A17362,AMY1A,Alpha-amylase
+158,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,-2.688413879,4,A17362,HK1,Hexokinase
+159,COL2A1_Collagen type II,285.0,Structural support,Extracellular,-0.290145531,4,A17362,COL2A1,Collagen type II
+160,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,-2.804345148,4,A17362,ACTB,Beta-actin
+161,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,2.773522813269718,4,A17362,TTN,Troponin T
+162,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,3.9693414106806735,4,A17362,UBB,Ubiquitin
+163,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,-1.489451064,4,A17362,LAMA2,Laminin
+164,ITGB1_Integrin,88.0,Cell adhesion,Membrane,3.598752339772144,4,A17362,ITGB1,Integrin
+165,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,-2.243043966,4,A17362,PRDX1,Peroxiredoxin
+166,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,3.5557266716631952,4,A17362,CASP3,Caspase-3
+167,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,3.957817378657129,4,A17362,SOD1,SOD1
+168,TF_Transferrin,77.0,Iron transport,Secreted,3.249471910921282,4,A17362,TF,Transferrin
+169,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,0.4181654975671112,4,A17362,GCG,Glucagon
+170,F2_Thrombin,37.0,Blood clotting,Secreted,-1.945110179,4,A17362,F2,Thrombin
+171,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,2.230873783353821,4,A17362,NEFH,Neurofilament
+172,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,-1.694115456,4,A17362,CALM1,Calmodulin
+173,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,-2.257725589,4,A17362,PYGM,Glycogen phosphorylase
+174,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,-1.793436862,4,A17362,HRAS,Ras protein
+175,COL3A1_Collagen type III,300.0,Structural support,Extracellular,-1.730579302,4,A17362,COL3A1,Collagen type III
+176,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,-2.274519823,4,A17362,COL4A1,Collagen type IV
+177,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,-0.487615343,4,A17362,PKLR,Pyruvate kinase
+178,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,-0.930845043,4,A17362,AK1,Adenylate kinase
+179,COL5A1_Collagen type V,184.0,Structural support,Extracellular,-1.731464252,4,A17362,COL5A1,Collagen type V
+180,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,-3.64630013,4,A17362,COL6A1,Collagen type VI
+181,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,-0.669947846,4,A17362,LAMB2,Laminin beta 2
+182,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,1.7293070576755287,4,A17362,ND1,NADH dehydrogenase
+183,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,-2.784783019,4,A17362,ATP5F1,ATP synthase
+184,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,2.2251565985203694,4,B24923,HBB,Hemoglobin
+185,ACTA1_Actin,42.0,Cell structure,Cytoplasm,2.1400219235091456,4,B24923,ACTA1,Actin
+186,COL1A1_Collagen,300.0,Structural support,Extracellular,-2.106253427,4,B24923,COL1A1,Collagen
+187,INS_Insulin,5.8,Regulation of glucose levels,Secreted,0.7610002192003611,4,B24923,INS,Insulin
+188,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,-3.985039381,4,B24923,MYH7,Myosin
+189,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,-3.991767626,4,B24923,CYC1,Cytochrome c
+190,KRT18_Keratin,52.0,Structural support,Cytoplasm,0.3160975355224931,4,B24923,KRT18,Keratin
+191,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,1.577948171333582,4,B24923,ALB,Albumin
+192,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,-0.131483043,4,B24923,TUBA1B,Tubulin
+193,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,2.416672639503988,4,B24923,FTH1,Ferritin
+194,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,-3.105193205,4,B24923,CAT,Catalase
+195,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,1.624561322296039,4,B24923,GAPDH,GAPDH
+196,FGA_Fibrinogen,340.0,Blood clotting,Plasma,-2.746431585,4,B24923,FGA,Fibrinogen
+197,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,-2.714644907,4,B24923,ELN,Elastin
+198,H1F0_Histone H1,21.0,DNA packaging,Nucleus,-2.140407088,4,B24923,H1F0,Histone H1
+199,LCT_Lactase,160.0,Breakdown of lactose,Secreted,-2.214070507,4,B24923,LCT,Lactase
+200,TP53_p53,53.0,Tumor suppression,Nucleus,-2.835230488,4,B24923,TP53,p53
+201,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,-2.78969854,4,B24923,CTRC,Chymotrypsin
+202,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,2.1915488473633173,4,B24923,HSPA1A,HSP70
+203,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,-0.790623998,4,B24923,AMY1A,Alpha-amylase
+204,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,-0.073529917,4,B24923,HK1,Hexokinase
+205,COL2A1_Collagen type II,285.0,Structural support,Extracellular,-1.090152924,4,B24923,COL2A1,Collagen type II
+206,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,1.1695535976463658,4,B24923,ACTB,Beta-actin
+207,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,2.421891457698246,4,B24923,TTN,Troponin T
+208,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,-3.380553333,4,B24923,UBB,Ubiquitin
+209,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,-0.928625053,4,B24923,LAMA2,Laminin
+210,ITGB1_Integrin,88.0,Cell adhesion,Membrane,-2.599912367,4,B24923,ITGB1,Integrin
+211,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,3.7959721388684473,4,B24923,PRDX1,Peroxiredoxin
+212,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,-2.112476528,4,B24923,CASP3,Caspase-3
+213,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,3.138942408548636,4,B24923,SOD1,SOD1
+214,TF_Transferrin,77.0,Iron transport,Secreted,2.933589542437512,4,B24923,TF,Transferrin
+215,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,0.7992996410678819,4,B24923,GCG,Glucagon
+216,F2_Thrombin,37.0,Blood clotting,Secreted,-1.743229204,4,B24923,F2,Thrombin
+217,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,3.969234043975293,4,B24923,NEFH,Neurofilament
+218,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,-2.533410636,4,B24923,CALM1,Calmodulin
+219,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,3.215883522284223,4,B24923,PYGM,Glycogen phosphorylase
+220,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,3.608071112514839,4,B24923,HRAS,Ras protein
+221,COL3A1_Collagen type III,300.0,Structural support,Extracellular,3.7664024151526094,4,B24923,COL3A1,Collagen type III
+222,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,1.4171223617748012,4,B24923,COL4A1,Collagen type IV
+223,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,-3.089504839,4,B24923,PKLR,Pyruvate kinase
+224,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,-3.575089291,4,B24923,AK1,Adenylate kinase
+225,COL5A1_Collagen type V,184.0,Structural support,Extracellular,-2.473407311,4,B24923,COL5A1,Collagen type V
+226,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,1.891216132916215,4,B24923,COL6A1,Collagen type VI
+227,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,-1.43761862,4,B24923,LAMB2,Laminin beta 2
+228,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,0.6621224225654956,4,B24923,ND1,NADH dehydrogenase
+229,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,-0.220265488,4,B24923,ATP5F1,ATP synthase
+230,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,3.9002862211866662,4,A39917,HBB,Hemoglobin
+231,ACTA1_Actin,42.0,Cell structure,Cytoplasm,-2.935869281,4,A39917,ACTA1,Actin
+232,COL1A1_Collagen,300.0,Structural support,Extracellular,-3.386763187,4,A39917,COL1A1,Collagen
+233,INS_Insulin,5.8,Regulation of glucose levels,Secreted,-0.297169851,4,A39917,INS,Insulin
+234,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,-0.145578997,4,A39917,MYH7,Myosin
+235,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,2.52323250668099,4,A39917,CYC1,Cytochrome c
+236,KRT18_Keratin,52.0,Structural support,Cytoplasm,-3.871357339,4,A39917,KRT18,Keratin
+237,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,0.1679563600611846,4,A39917,ALB,Albumin
+238,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,0.7151693101916567,4,A39917,TUBA1B,Tubulin
+239,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,-2.077003343,4,A39917,FTH1,Ferritin
+240,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,-1.561523996,4,A39917,CAT,Catalase
+241,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,2.543298025875973,4,A39917,GAPDH,GAPDH
+242,FGA_Fibrinogen,340.0,Blood clotting,Plasma,-1.122499808,4,A39917,FGA,Fibrinogen
+243,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,1.4366694933460795,4,A39917,ELN,Elastin
+244,H1F0_Histone H1,21.0,DNA packaging,Nucleus,3.628829240653438,4,A39917,H1F0,Histone H1
+245,LCT_Lactase,160.0,Breakdown of lactose,Secreted,-0.407993032,4,A39917,LCT,Lactase
+246,TP53_p53,53.0,Tumor suppression,Nucleus,-2.094345563,4,A39917,TP53,p53
+247,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,3.465667531161925,4,A39917,CTRC,Chymotrypsin
+248,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,1.5129996819075204,4,A39917,HSPA1A,HSP70
+249,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,-2.084238829,4,A39917,AMY1A,Alpha-amylase
+250,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,-2.675110866,4,A39917,HK1,Hexokinase
+251,COL2A1_Collagen type II,285.0,Structural support,Extracellular,-0.399821131,4,A39917,COL2A1,Collagen type II
+252,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,-0.753935507,4,A39917,ACTB,Beta-actin
+253,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,-2.132463092,4,A39917,TTN,Troponin T
+254,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,-0.444908632,4,A39917,UBB,Ubiquitin
+255,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,-0.190554421,4,A39917,LAMA2,Laminin
+256,ITGB1_Integrin,88.0,Cell adhesion,Membrane,-2.059324839,4,A39917,ITGB1,Integrin
+257,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,3.087621788098424,4,A39917,PRDX1,Peroxiredoxin
+258,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,1.703791661417312,4,A39917,CASP3,Caspase-3
+259,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,0.6582428918583618,4,A39917,SOD1,SOD1
+260,TF_Transferrin,77.0,Iron transport,Secreted,-1.26165865,4,A39917,TF,Transferrin
+261,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,-0.729785992,4,A39917,GCG,Glucagon
+262,F2_Thrombin,37.0,Blood clotting,Secreted,-3.304548499,4,A39917,F2,Thrombin
+263,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,2.4842327094705707,4,A39917,NEFH,Neurofilament
+264,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,-2.595361,4,A39917,CALM1,Calmodulin
+265,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,3.255238869333369,4,A39917,PYGM,Glycogen phosphorylase
+266,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,3.351976419808532,4,A39917,HRAS,Ras protein
+267,COL3A1_Collagen type III,300.0,Structural support,Extracellular,1.2304953169609556,4,A39917,COL3A1,Collagen type III
+268,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,-3.048502021,4,A39917,COL4A1,Collagen type IV
+269,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,3.242276263919404,4,A39917,PKLR,Pyruvate kinase
+270,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,3.3871136872226115,4,A39917,AK1,Adenylate kinase
+271,COL5A1_Collagen type V,184.0,Structural support,Extracellular,1.5406197082500173,4,A39917,COL5A1,Collagen type V
+272,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,-1.115130122,4,A39917,COL6A1,Collagen type VI
+273,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,1.6830793130128203,4,A39917,LAMB2,Laminin beta 2
+274,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,0.1030097098512961,4,A39917,ND1,NADH dehydrogenase
+275,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,0.3116931316161286,4,A39917,ATP5F1,ATP synthase
+276,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,0.6625704509478823,6,A17362,HBB,Hemoglobin
+277,ACTA1_Actin,42.0,Cell structure,Cytoplasm,-4.341109253,6,A17362,ACTA1,Actin
+278,COL1A1_Collagen,300.0,Structural support,Extracellular,4.007005454289031,6,A17362,COL1A1,Collagen
+279,INS_Insulin,5.8,Regulation of glucose levels,Secreted,-4.687623685,6,A17362,INS,Insulin
+280,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,-1.926725439,6,A17362,MYH7,Myosin
+281,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,2.765467542371585,6,A17362,CYC1,Cytochrome c
+282,KRT18_Keratin,52.0,Structural support,Cytoplasm,-1.557019572,6,A17362,KRT18,Keratin
+283,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,0.5936847188708079,6,A17362,ALB,Albumin
+284,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,4.845434174190913,6,A17362,TUBA1B,Tubulin
+285,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,-1.714575405,6,A17362,FTH1,Ferritin
+286,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,-0.591769681,6,A17362,CAT,Catalase
+287,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,-2.734368822,6,A17362,GAPDH,GAPDH
+288,FGA_Fibrinogen,340.0,Blood clotting,Plasma,2.21973828,6,A17362,FGA,Fibrinogen
+289,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,-0.159895593,6,A17362,ELN,Elastin
+290,H1F0_Histone H1,21.0,DNA packaging,Nucleus,4.333772995957308,6,A17362,H1F0,Histone H1
+291,LCT_Lactase,160.0,Breakdown of lactose,Secreted,-2.859342968,6,A17362,LCT,Lactase
+292,TP53_p53,53.0,Tumor suppression,Nucleus,-0.115991657,6,A17362,TP53,p53
+293,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,2.714826510400981,6,A17362,CTRC,Chymotrypsin
+294,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,-2.033031941,6,A17362,HSPA1A,HSP70
+295,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,-0.097580069,6,A17362,AMY1A,Alpha-amylase
+296,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,-4.199984397,6,A17362,HK1,Hexokinase
+297,COL2A1_Collagen type II,285.0,Structural support,Extracellular,-4.979304884,6,A17362,COL2A1,Collagen type II
+298,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,5.888559915449045,6,A17362,ACTB,Beta-actin
+299,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,-5.13685088,6,A17362,TTN,Troponin T
+300,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,-0.598109497,6,A17362,UBB,Ubiquitin
+301,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,5.477779773695794,6,A17362,LAMA2,Laminin
+302,ITGB1_Integrin,88.0,Cell adhesion,Membrane,-5.908372809,6,A17362,ITGB1,Integrin
+303,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,4.137161790295323,6,A17362,PRDX1,Peroxiredoxin
+304,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,3.318203739534246,6,A17362,CASP3,Caspase-3
+305,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,2.381847891630482,6,A17362,SOD1,SOD1
+306,TF_Transferrin,77.0,Iron transport,Secreted,-4.217714245,6,A17362,TF,Transferrin
+307,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,-5.100234108,6,A17362,GCG,Glucagon
+308,F2_Thrombin,37.0,Blood clotting,Secreted,-0.158807368,6,A17362,F2,Thrombin
+309,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,-3.008919825,6,A17362,NEFH,Neurofilament
+310,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,,6,A17362,CALM1,Calmodulin
+311,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,-4.280366291,6,A17362,PYGM,Glycogen phosphorylase
+312,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,1.856568225938675,6,A17362,HRAS,Ras protein
+313,COL3A1_Collagen type III,300.0,Structural support,Extracellular,5.932743502669208,6,A17362,COL3A1,Collagen type III
+314,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,-2.33266782,6,A17362,COL4A1,Collagen type IV
+315,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,-3.498777867,6,A17362,PKLR,Pyruvate kinase
+316,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,2.822746071,6,A17362,AK1,Adenylate kinase
+317,COL5A1_Collagen type V,184.0,Structural support,Extracellular,2.7834326124669726,6,A17362,COL5A1,Collagen type V
+318,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,5.097256291903562,6,A17362,COL6A1,Collagen type VI
+319,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,3.7298513848731822,6,A17362,LAMB2,Laminin beta 2
+320,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,-1.40473175,6,A17362,ND1,NADH dehydrogenase
+321,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,-1.698331653,6,A17362,ATP5F1,ATP synthase
+322,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,3.4069553481702943,6,B24923,HBB,Hemoglobin
+323,ACTA1_Actin,42.0,Cell structure,Cytoplasm,-2.258440797,6,B24923,ACTA1,Actin
+324,COL1A1_Collagen,300.0,Structural support,Extracellular,4.585865575338799,6,B24923,COL1A1,Collagen
+325,INS_Insulin,5.8,Regulation of glucose levels,Secreted,2.6966630478077285,6,B24923,INS,Insulin
+326,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,-3.410427958,6,B24923,MYH7,Myosin
+327,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,-1.988057803,6,B24923,CYC1,Cytochrome c
+328,KRT18_Keratin,52.0,Structural support,Cytoplasm,3.307747168636324,6,B24923,KRT18,Keratin
+329,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,3.75606823986184,6,B24923,ALB,Albumin
+330,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,3.4714910432133923,6,B24923,TUBA1B,Tubulin
+331,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,-0.720207077,6,B24923,FTH1,Ferritin
+332,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,-0.685288461,6,B24923,CAT,Catalase
+333,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,3.107945466,6,B24923,GAPDH,GAPDH
+334,FGA_Fibrinogen,340.0,Blood clotting,Plasma,-5.726255968,6,B24923,FGA,Fibrinogen
+335,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,-4.868896967,6,B24923,ELN,Elastin
+336,H1F0_Histone H1,21.0,DNA packaging,Nucleus,1.420133957253051,6,B24923,H1F0,Histone H1
+337,LCT_Lactase,160.0,Breakdown of lactose,Secreted,-5.245645638,6,B24923,LCT,Lactase
+338,TP53_p53,53.0,Tumor suppression,Nucleus,2.8614559677247247,6,B24923,TP53,p53
+339,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,3.0611864308668046,6,B24923,CTRC,Chymotrypsin
+340,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,0.071804582,6,B24923,HSPA1A,HSP70
+341,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,,6,B24923,AMY1A,Alpha-amylase
+342,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,2.4796580416687988,6,B24923,HK1,Hexokinase
+343,COL2A1_Collagen type II,285.0,Structural support,Extracellular,-0.21106741,6,B24923,COL2A1,Collagen type II
+344,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,3.719453536224568,6,B24923,ACTB,Beta-actin
+345,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,-1.84467308,6,B24923,TTN,Troponin T
+346,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,-1.22711815,6,B24923,UBB,Ubiquitin
+347,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,2.922912831463453,6,B24923,LAMA2,Laminin
+348,ITGB1_Integrin,88.0,Cell adhesion,Membrane,-0.282436255,6,B24923,ITGB1,Integrin
+349,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,5.996737236777811,6,B24923,PRDX1,Peroxiredoxin
+350,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,4.737451570385057,6,B24923,CASP3,Caspase-3
+351,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,-4.153713152,6,B24923,SOD1,SOD1
+352,TF_Transferrin,77.0,Iron transport,Secreted,0.8866284504159498,6,B24923,TF,Transferrin
+353,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,-4.48389531,6,B24923,GCG,Glucagon
+354,F2_Thrombin,37.0,Blood clotting,Secreted,1.3642463731776855,6,B24923,F2,Thrombin
+355,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,1.493795523772782,6,B24923,NEFH,Neurofilament
+356,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,0.8370466318752428,6,B24923,CALM1,Calmodulin
+357,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,-5.471431512,6,B24923,PYGM,Glycogen phosphorylase
+358,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,-4.874351785,6,B24923,HRAS,Ras protein
+359,COL3A1_Collagen type III,300.0,Structural support,Extracellular,-1.892933949,6,B24923,COL3A1,Collagen type III
+360,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,0.3293766020119166,6,B24923,COL4A1,Collagen type IV
+361,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,0.2459097134250765,6,B24923,PKLR,Pyruvate kinase
+362,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,-3.561404415,6,B24923,AK1,Adenylate kinase
+363,COL5A1_Collagen type V,184.0,Structural support,Extracellular,-3.877845296,6,B24923,COL5A1,Collagen type V
+364,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,4.373418125871826,6,B24923,COL6A1,Collagen type VI
+365,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,4.609090962884061,6,B24923,LAMB2,Laminin beta 2
+366,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,-1.36091944,6,B24923,ND1,NADH dehydrogenase
+367,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,-4.57913706,6,B24923,ATP5F1,ATP synthase
+368,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,5.0409154958082425,6,A39917,HBB,Hemoglobin
+369,ACTA1_Actin,42.0,Cell structure,Cytoplasm,-3.349218501,6,A39917,ACTA1,Actin
+370,COL1A1_Collagen,300.0,Structural support,Extracellular,-3.413394757,6,A39917,COL1A1,Collagen
+371,INS_Insulin,5.8,Regulation of glucose levels,Secreted,-3.110796353,6,A39917,INS,Insulin
+372,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,3.308961345126468,6,A39917,MYH7,Myosin
+373,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,1.5942364412410264,6,A39917,CYC1,Cytochrome c
+374,KRT18_Keratin,52.0,Structural support,Cytoplasm,4.0375450514513975,6,A39917,KRT18,Keratin
+375,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,-4.707892136,6,A39917,ALB,Albumin
+376,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,3.860375640597285,6,A39917,TUBA1B,Tubulin
+377,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,3.5607175471682293,6,A39917,FTH1,Ferritin
+378,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,-3.010430433,6,A39917,CAT,Catalase
+379,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,-1.306124186,6,A39917,GAPDH,GAPDH
+380,FGA_Fibrinogen,340.0,Blood clotting,Plasma,-0.308025355,6,A39917,FGA,Fibrinogen
+381,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,2.316497786,6,A39917,ELN,Elastin
+382,H1F0_Histone H1,21.0,DNA packaging,Nucleus,2.447292216110757,6,A39917,H1F0,Histone H1
+383,LCT_Lactase,160.0,Breakdown of lactose,Secreted,-1.649644747,6,A39917,LCT,Lactase
+384,TP53_p53,53.0,Tumor suppression,Nucleus,-4.463978396,6,A39917,TP53,p53
+385,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,1.442809716963171,6,A39917,CTRC,Chymotrypsin
+386,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,-3.416943197,6,A39917,HSPA1A,HSP70
+387,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,-4.185412917,6,A39917,AMY1A,Alpha-amylase
+388,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,-4.870493747,6,A39917,HK1,Hexokinase
+389,COL2A1_Collagen type II,285.0,Structural support,Extracellular,4.101816483830124,6,A39917,COL2A1,Collagen type II
+390,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,-5.766769268,6,A39917,ACTB,Beta-actin
+391,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,4.555784864097848,6,A39917,TTN,Troponin T
+392,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,0.842962589,6,A39917,UBB,Ubiquitin
+393,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,2.5456534052796265,6,A39917,LAMA2,Laminin
+394,ITGB1_Integrin,88.0,Cell adhesion,Membrane,-3.947643822,6,A39917,ITGB1,Integrin
+395,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,-1.662842135,6,A39917,PRDX1,Peroxiredoxin
+396,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,5.948637045404297,6,A39917,CASP3,Caspase-3
+397,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,5.2643995859393335,6,A39917,SOD1,SOD1
+398,TF_Transferrin,77.0,Iron transport,Secreted,5.364736989101349,6,A39917,TF,Transferrin
+399,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,3.6520046,6,A39917,GCG,Glucagon
+400,F2_Thrombin,37.0,Blood clotting,Secreted,1.568804791207004,6,A39917,F2,Thrombin
+401,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,0.7001617309794304,6,A39917,NEFH,Neurofilament
+402,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,5.048419419,6,A39917,CALM1,Calmodulin
+403,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,-1.911107022,6,A39917,PYGM,Glycogen phosphorylase
+404,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,-2.965187653,6,A39917,HRAS,Ras protein
+405,COL3A1_Collagen type III,300.0,Structural support,Extracellular,-4.724902423,6,A39917,COL3A1,Collagen type III
+406,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,5.428847811461985,6,A39917,COL4A1,Collagen type IV
+407,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,-1.591217387,6,A39917,PKLR,Pyruvate kinase
+408,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,2.2925441756918588,6,A39917,AK1,Adenylate kinase
+409,COL5A1_Collagen type V,184.0,Structural support,Extracellular,0.7217757841979076,6,A39917,COL5A1,Collagen type V
+410,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,-3.277397971,6,A39917,COL6A1,Collagen type VI
+411,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,-4.289141045,6,A39917,LAMB2,Laminin beta 2
+412,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,-5.29859251,6,A39917,ND1,NADH dehydrogenase
+413,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,-3.176906919,6,A39917,ATP5F1,ATP synthase
+414,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,-2.810832256,8,A17362,HBB,Hemoglobin
+415,ACTA1_Actin,42.0,Cell structure,Cytoplasm,-2.328064541,8,A17362,ACTA1,Actin
+416,COL1A1_Collagen,300.0,Structural support,Extracellular,0.733386151,8,A17362,COL1A1,Collagen
+417,INS_Insulin,5.8,Regulation of glucose levels,Secreted,3.674646725390069,8,A17362,INS,Insulin
+418,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,1.3971303387418992,8,A17362,MYH7,Myosin
+419,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,7.114229136078659,8,A17362,CYC1,Cytochrome c
+420,KRT18_Keratin,52.0,Structural support,Cytoplasm,7.596891643173986,8,A17362,KRT18,Keratin
+421,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,0.9088226171548328,8,A17362,ALB,Albumin
+422,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,-1.581910457,8,A17362,TUBA1B,Tubulin
+423,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,4.907677805019944,8,A17362,FTH1,Ferritin
+424,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,-1.450835937,8,A17362,CAT,Catalase
+425,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,7.048128869010684,8,A17362,GAPDH,GAPDH
+426,FGA_Fibrinogen,340.0,Blood clotting,Plasma,1.0665154898458429,8,A17362,FGA,Fibrinogen
+427,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,0.020191437392615,8,A17362,ELN,Elastin
+428,H1F0_Histone H1,21.0,DNA packaging,Nucleus,-1.27981376,8,A17362,H1F0,Histone H1
+429,LCT_Lactase,160.0,Breakdown of lactose,Secreted,4.457420137602647,8,A17362,LCT,Lactase
+430,TP53_p53,53.0,Tumor suppression,Nucleus,-4.062887093,8,A17362,TP53,p53
+431,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,-4.482646741,8,A17362,CTRC,Chymotrypsin
+432,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,-3.227620757,8,A17362,HSPA1A,HSP70
+433,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,-5.431380243,8,A17362,AMY1A,Alpha-amylase
+434,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,-1.395260556,8,A17362,HK1,Hexokinase
+435,COL2A1_Collagen type II,285.0,Structural support,Extracellular,-2.015368578,8,A17362,COL2A1,Collagen type II
+436,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,-3.824781802,8,A17362,ACTB,Beta-actin
+437,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,-4.364969585,8,A17362,TTN,Troponin T
+438,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,0.5732636577173267,8,A17362,UBB,Ubiquitin
+439,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,-6.825573533,8,A17362,LAMA2,Laminin
+440,ITGB1_Integrin,88.0,Cell adhesion,Membrane,-1.949207715,8,A17362,ITGB1,Integrin
+441,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,-6.477418589,8,A17362,PRDX1,Peroxiredoxin
+442,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,1.3943800399719295,8,A17362,CASP3,Caspase-3
+443,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,0.2420283487395593,8,A17362,SOD1,SOD1
+444,TF_Transferrin,77.0,Iron transport,Secreted,1.5813561316816769,8,A17362,TF,Transferrin
+445,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,-7.273298358,8,A17362,GCG,Glucagon
+446,F2_Thrombin,37.0,Blood clotting,Secreted,-2.197904228,8,A17362,F2,Thrombin
+447,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,2.3613246980985405,8,A17362,NEFH,Neurofilament
+448,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,,8,A17362,CALM1,Calmodulin
+449,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,6.906154981,8,A17362,PYGM,Glycogen phosphorylase
+450,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,-3.569712175,8,A17362,HRAS,Ras protein
+451,COL3A1_Collagen type III,300.0,Structural support,Extracellular,-4.967544767,8,A17362,COL3A1,Collagen type III
+452,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,-0.225148602,8,A17362,COL4A1,Collagen type IV
+453,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,-2.258355664,8,A17362,PKLR,Pyruvate kinase
+454,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,,8,A17362,AK1,Adenylate kinase
+455,COL5A1_Collagen type V,184.0,Structural support,Extracellular,-5.823738403,8,A17362,COL5A1,Collagen type V
+456,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,-4.942914722,8,A17362,COL6A1,Collagen type VI
+457,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,-5.154699889,8,A17362,LAMB2,Laminin beta 2
+458,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,6.114439477187252,8,A17362,ND1,NADH dehydrogenase
+459,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,-6.23285189,8,A17362,ATP5F1,ATP synthase
+460,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,-5.198557048,8,B24923,HBB,Hemoglobin
+461,ACTA1_Actin,42.0,Cell structure,Cytoplasm,-1.201028907,8,B24923,ACTA1,Actin
+462,COL1A1_Collagen,300.0,Structural support,Extracellular,-2.728231671,8,B24923,COL1A1,Collagen
+463,INS_Insulin,5.8,Regulation of glucose levels,Secreted,6.702928280629836,8,B24923,INS,Insulin
+464,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,-6.773073562,8,B24923,MYH7,Myosin
+465,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,6.671448538033383,8,B24923,CYC1,Cytochrome c
+466,KRT18_Keratin,52.0,Structural support,Cytoplasm,2.4023325131823032,8,B24923,KRT18,Keratin
+467,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,2.9046924391573548,8,B24923,ALB,Albumin
+468,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,0.3607581492906924,8,B24923,TUBA1B,Tubulin
+469,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,6.777713681,8,B24923,FTH1,Ferritin
+470,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,-3.056922631,8,B24923,CAT,Catalase
+471,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,-2.523038385,8,B24923,GAPDH,GAPDH
+472,FGA_Fibrinogen,340.0,Blood clotting,Plasma,7.875630801734118,8,B24923,FGA,Fibrinogen
+473,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,-2.752083399,8,B24923,ELN,Elastin
+474,H1F0_Histone H1,21.0,DNA packaging,Nucleus,1.85342174113422,8,B24923,H1F0,Histone H1
+475,LCT_Lactase,160.0,Breakdown of lactose,Secreted,5.779967298,8,B24923,LCT,Lactase
+476,TP53_p53,53.0,Tumor suppression,Nucleus,-4.842955984,8,B24923,TP53,p53
+477,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,-3.840401637,8,B24923,CTRC,Chymotrypsin
+478,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,4.055724103374109,8,B24923,HSPA1A,HSP70
+479,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,-7.498667428,8,B24923,AMY1A,Alpha-amylase
+480,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,,8,B24923,HK1,Hexokinase
+481,COL2A1_Collagen type II,285.0,Structural support,Extracellular,5.570748082729976,8,B24923,COL2A1,Collagen type II
+482,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,-4.62602067,8,B24923,ACTB,Beta-actin
+483,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,-6.211976864,8,B24923,TTN,Troponin T
+484,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,-4.450839196,8,B24923,UBB,Ubiquitin
+485,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,-6.034562936,8,B24923,LAMA2,Laminin
+486,ITGB1_Integrin,88.0,Cell adhesion,Membrane,0.9031037701388432,8,B24923,ITGB1,Integrin
+487,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,4.064790395211654,8,B24923,PRDX1,Peroxiredoxin
+488,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,-0.389566872,8,B24923,CASP3,Caspase-3
+489,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,0.3831848468973113,8,B24923,SOD1,SOD1
+490,TF_Transferrin,77.0,Iron transport,Secreted,-0.647646256,8,B24923,TF,Transferrin
+491,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,1.1013013698156282,8,B24923,GCG,Glucagon
+492,F2_Thrombin,37.0,Blood clotting,Secreted,7.567700546852455,8,B24923,F2,Thrombin
+493,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,6.179537576065224,8,B24923,NEFH,Neurofilament
+494,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,-1.835710804,8,B24923,CALM1,Calmodulin
+495,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,2.655961954,8,B24923,PYGM,Glycogen phosphorylase
+496,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,-7.347341825,8,B24923,HRAS,Ras protein
+497,COL3A1_Collagen type III,300.0,Structural support,Extracellular,3.3371295837946526,8,B24923,COL3A1,Collagen type III
+498,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,1.4718700835525311,8,B24923,COL4A1,Collagen type IV
+499,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,-3.367138392,8,B24923,PKLR,Pyruvate kinase
+500,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,-3.726811796,8,B24923,AK1,Adenylate kinase
+501,COL5A1_Collagen type V,184.0,Structural support,Extracellular,,8,B24923,COL5A1,Collagen type V
+502,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,4.997937901237812,8,B24923,COL6A1,Collagen type VI
+503,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,-2.585519829,8,B24923,LAMB2,Laminin beta 2
+504,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,7.200759123068991,8,B24923,ND1,NADH dehydrogenase
+505,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,-5.212489329,8,B24923,ATP5F1,ATP synthase
+506,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,-4.709285613,8,A39917,HBB,Hemoglobin
+507,ACTA1_Actin,42.0,Cell structure,Cytoplasm,-5.80817002,8,A39917,ACTA1,Actin
+508,COL1A1_Collagen,300.0,Structural support,Extracellular,-4.666765115,8,A39917,COL1A1,Collagen
+509,INS_Insulin,5.8,Regulation of glucose levels,Secreted,-7.663046621,8,A39917,INS,Insulin
+510,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,4.284315732179032,8,A39917,MYH7,Myosin
+511,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,-5.670250759,8,A39917,CYC1,Cytochrome c
+512,KRT18_Keratin,52.0,Structural support,Cytoplasm,3.0075317287954477,8,A39917,KRT18,Keratin
+513,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,-6.342792651,8,A39917,ALB,Albumin
+514,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,-6.451066234,8,A39917,TUBA1B,Tubulin
+515,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,-0.804413423,8,A39917,FTH1,Ferritin
+516,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,0.6193922449625795,8,A39917,CAT,Catalase
+517,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,1.932014281749982,8,A39917,GAPDH,GAPDH
+518,FGA_Fibrinogen,340.0,Blood clotting,Plasma,,8,A39917,FGA,Fibrinogen
+519,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,1.785461359801511,8,A39917,ELN,Elastin
+520,H1F0_Histone H1,21.0,DNA packaging,Nucleus,-1.479513898,8,A39917,H1F0,Histone H1
+521,LCT_Lactase,160.0,Breakdown of lactose,Secreted,4.998291608068378,8,A39917,LCT,Lactase
+522,TP53_p53,53.0,Tumor suppression,Nucleus,-6.760637347,8,A39917,TP53,p53
+523,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,-7.394386428,8,A39917,CTRC,Chymotrypsin
+524,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,-0.346960359,8,A39917,HSPA1A,HSP70
+525,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,5.247608610180787,8,A39917,AMY1A,Alpha-amylase
+526,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,-6.951467755,8,A39917,HK1,Hexokinase
+527,COL2A1_Collagen type II,285.0,Structural support,Extracellular,4.648228462814164,8,A39917,COL2A1,Collagen type II
+528,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,6.870703269167105,8,A39917,ACTB,Beta-actin
+529,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,4.267724627180906,8,A39917,TTN,Troponin T
+530,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,6.934210812837625,8,A39917,UBB,Ubiquitin
+531,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,-6.933128768,8,A39917,LAMA2,Laminin
+532,ITGB1_Integrin,88.0,Cell adhesion,Membrane,3.7402785599900663,8,A39917,ITGB1,Integrin
+533,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,-0.33138427,8,A39917,PRDX1,Peroxiredoxin
+534,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,-3.72264432,8,A39917,CASP3,Caspase-3
+535,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,-0.632422288,8,A39917,SOD1,SOD1
+536,TF_Transferrin,77.0,Iron transport,Secreted,5.309138262373246,8,A39917,TF,Transferrin
+537,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,-5.884372979,8,A39917,GCG,Glucagon
+538,F2_Thrombin,37.0,Blood clotting,Secreted,3.8705738944389294,8,A39917,F2,Thrombin
+539,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,5.7255827702256745,8,A39917,NEFH,Neurofilament
+540,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,-6.272520206,8,A39917,CALM1,Calmodulin
+541,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,3.656740100183788,8,A39917,PYGM,Glycogen phosphorylase
+542,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,3.1600534836878023,8,A39917,HRAS,Ras protein
+543,COL3A1_Collagen type III,300.0,Structural support,Extracellular,6.873924076354571,8,A39917,COL3A1,Collagen type III
+544,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,,8,A39917,COL4A1,Collagen type IV
+545,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,0.7953492444863173,8,A39917,PKLR,Pyruvate kinase
+546,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,-6.421070054,8,A39917,AK1,Adenylate kinase
+547,COL5A1_Collagen type V,184.0,Structural support,Extracellular,4.944633510245616,8,A39917,COL5A1,Collagen type V
+548,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,2.6107882331206973,8,A39917,COL6A1,Collagen type VI
+549,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,-0.222334775,8,A39917,LAMB2,Laminin beta 2
+550,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,-6.695999957,8,A39917,ND1,NADH dehydrogenase
+551,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,-4.944754136,8,A39917,ATP5F1,ATP synthase
+552,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,4.838223874932648,10,A17362,HBB,Hemoglobin
+553,ACTA1_Actin,42.0,Cell structure,Cytoplasm,9.56534093659682,10,A17362,ACTA1,Actin
+554,COL1A1_Collagen,300.0,Structural support,Extracellular,6.353131494796774,10,A17362,COL1A1,Collagen
+555,INS_Insulin,5.8,Regulation of glucose levels,Secreted,-2.995307724,10,A17362,INS,Insulin
+556,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,3.4336192702659645,10,A17362,MYH7,Myosin
+557,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,-1.506196174,10,A17362,CYC1,Cytochrome c
+558,KRT18_Keratin,52.0,Structural support,Cytoplasm,-8.495014261,10,A17362,KRT18,Keratin
+559,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,4.215801872140951,10,A17362,ALB,Albumin
+560,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,2.76056497,10,A17362,TUBA1B,Tubulin
+561,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,4.766364647950493,10,A17362,FTH1,Ferritin
+562,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,4.546405332155576,10,A17362,CAT,Catalase
+563,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,1.025047950515292,10,A17362,GAPDH,GAPDH
+564,FGA_Fibrinogen,340.0,Blood clotting,Plasma,-1.427904207,10,A17362,FGA,Fibrinogen
+565,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,9.831124456040246,10,A17362,ELN,Elastin
+566,H1F0_Histone H1,21.0,DNA packaging,Nucleus,-4.508929824,10,A17362,H1F0,Histone H1
+567,LCT_Lactase,160.0,Breakdown of lactose,Secreted,1.9993188025361608,10,A17362,LCT,Lactase
+568,TP53_p53,53.0,Tumor suppression,Nucleus,,10,A17362,TP53,p53
+569,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,2.630712805842359,10,A17362,CTRC,Chymotrypsin
+570,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,-9.849633016,10,A17362,HSPA1A,HSP70
+571,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,-3.983061177,10,A17362,AMY1A,Alpha-amylase
+572,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,-4.839457186,10,A17362,HK1,Hexokinase
+573,COL2A1_Collagen type II,285.0,Structural support,Extracellular,-9.933798465,10,A17362,COL2A1,Collagen type II
+574,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,7.102935022327962,10,A17362,ACTB,Beta-actin
+575,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,-6.681286649,10,A17362,TTN,Troponin T
+576,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,8.765543194020395,10,A17362,UBB,Ubiquitin
+577,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,-3.91077321,10,A17362,LAMA2,Laminin
+578,ITGB1_Integrin,88.0,Cell adhesion,Membrane,-6.015934369,10,A17362,ITGB1,Integrin
+579,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,8.252159729,10,A17362,PRDX1,Peroxiredoxin
+580,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,6.017571361167619,10,A17362,CASP3,Caspase-3
+581,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,-4.038296339,10,A17362,SOD1,SOD1
+582,TF_Transferrin,77.0,Iron transport,Secreted,7.121687308273788,10,A17362,TF,Transferrin
+583,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,-5.131630497,10,A17362,GCG,Glucagon
+584,F2_Thrombin,37.0,Blood clotting,Secreted,9.206720995243042,10,A17362,F2,Thrombin
+585,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,-3.348388269,10,A17362,NEFH,Neurofilament
+586,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,,10,A17362,CALM1,Calmodulin
+587,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,8.579749772216783,10,A17362,PYGM,Glycogen phosphorylase
+588,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,7.228661406452339,10,A17362,HRAS,Ras protein
+589,COL3A1_Collagen type III,300.0,Structural support,Extracellular,-7.820859047,10,A17362,COL3A1,Collagen type III
+590,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,-4.051710112,10,A17362,COL4A1,Collagen type IV
+591,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,-5.350906644,10,A17362,PKLR,Pyruvate kinase
+592,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,-8.004969386,10,A17362,AK1,Adenylate kinase
+593,COL5A1_Collagen type V,184.0,Structural support,Extracellular,5.355012130785202,10,A17362,COL5A1,Collagen type V
+594,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,1.0104142552698203,10,A17362,COL6A1,Collagen type VI
+595,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,-3.204748613,10,A17362,LAMB2,Laminin beta 2
+596,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,5.983322678623518,10,A17362,ND1,NADH dehydrogenase
+597,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,-6.665354039,10,A17362,ATP5F1,ATP synthase
+598,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,-8.378785839,10,B24923,HBB,Hemoglobin
+599,ACTA1_Actin,42.0,Cell structure,Cytoplasm,-2.633838664,10,B24923,ACTA1,Actin
+600,COL1A1_Collagen,300.0,Structural support,Extracellular,-0.307043562,10,B24923,COL1A1,Collagen
+601,INS_Insulin,5.8,Regulation of glucose levels,Secreted,0.019273069553364,10,B24923,INS,Insulin
+602,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,7.923643712122953,10,B24923,MYH7,Myosin
+603,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,1.816776968,10,B24923,CYC1,Cytochrome c
+604,KRT18_Keratin,52.0,Structural support,Cytoplasm,-7.360487885,10,B24923,KRT18,Keratin
+605,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,-8.729718216,10,B24923,ALB,Albumin
+606,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,2.905812564960776,10,B24923,TUBA1B,Tubulin
+607,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,9.143118515343067,10,B24923,FTH1,Ferritin
+608,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,7.639939649116492,10,B24923,CAT,Catalase
+609,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,-3.792214262,10,B24923,GAPDH,GAPDH
+610,FGA_Fibrinogen,340.0,Blood clotting,Plasma,,10,B24923,FGA,Fibrinogen
+611,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,7.761622964,10,B24923,ELN,Elastin
+612,H1F0_Histone H1,21.0,DNA packaging,Nucleus,-1.425383547,10,B24923,H1F0,Histone H1
+613,LCT_Lactase,160.0,Breakdown of lactose,Secreted,6.708106952831056,10,B24923,LCT,Lactase
+614,TP53_p53,53.0,Tumor suppression,Nucleus,-0.230840309,10,B24923,TP53,p53
+615,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,8.267316478209764,10,B24923,CTRC,Chymotrypsin
+616,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,0.032868856,10,B24923,HSPA1A,HSP70
+617,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,3.925020415010465,10,B24923,AMY1A,Alpha-amylase
+618,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,-3.899179264,10,B24923,HK1,Hexokinase
+619,COL2A1_Collagen type II,285.0,Structural support,Extracellular,0.6640577654554054,10,B24923,COL2A1,Collagen type II
+620,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,-1.873603405,10,B24923,ACTB,Beta-actin
+621,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,9.210560616062445,10,B24923,TTN,Troponin T
+622,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,-1.646016826,10,B24923,UBB,Ubiquitin
+623,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,9.344612383,10,B24923,LAMA2,Laminin
+624,ITGB1_Integrin,88.0,Cell adhesion,Membrane,7.863583118301996,10,B24923,ITGB1,Integrin
+625,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,-7.163836263,10,B24923,PRDX1,Peroxiredoxin
+626,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,-9.1077894,10,B24923,CASP3,Caspase-3
+627,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,-9.614639645,10,B24923,SOD1,SOD1
+628,TF_Transferrin,77.0,Iron transport,Secreted,-9.177234115,10,B24923,TF,Transferrin
+629,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,-0.444671495,10,B24923,GCG,Glucagon
+630,F2_Thrombin,37.0,Blood clotting,Secreted,-9.225316745,10,B24923,F2,Thrombin
+631,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,4.700426455472968,10,B24923,NEFH,Neurofilament
+632,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,1.9584773292710655,10,B24923,CALM1,Calmodulin
+633,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,-9.73683173,10,B24923,PYGM,Glycogen phosphorylase
+634,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,,10,B24923,HRAS,Ras protein
+635,COL3A1_Collagen type III,300.0,Structural support,Extracellular,-9.868444435,10,B24923,COL3A1,Collagen type III
+636,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,-2.867148029,10,B24923,COL4A1,Collagen type IV
+637,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,-2.18740666,10,B24923,PKLR,Pyruvate kinase
+638,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,1.9946554857178975,10,B24923,AK1,Adenylate kinase
+639,COL5A1_Collagen type V,184.0,Structural support,Extracellular,2.4670474296101226,10,B24923,COL5A1,Collagen type V
+640,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,8.455814286436208,10,B24923,COL6A1,Collagen type VI
+641,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,7.610931878373243,10,B24923,LAMB2,Laminin beta 2
+642,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,-8.519963514,10,B24923,ND1,NADH dehydrogenase
+643,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,6.456042938974981,10,B24923,ATP5F1,ATP synthase
+644,HBB_Hemoglobin,64.5,Oxygen transport,Cytoplasm,-7.751673301,10,A39917,HBB,Hemoglobin
+645,ACTA1_Actin,42.0,Cell structure,Cytoplasm,2.927251718825893,10,A39917,ACTA1,Actin
+646,COL1A1_Collagen,300.0,Structural support,Extracellular,3.0069771319338727,10,A39917,COL1A1,Collagen
+647,INS_Insulin,5.8,Regulation of glucose levels,Secreted,-3.584088559,10,A39917,INS,Insulin
+648,MYH7_Myosin,220.0,Muscle contraction,Cytoplasm,7.997777807884503,10,A39917,MYH7,Myosin
+649,CYC1_Cytochrome c,12.4,Electron transport,Mitochondria,-4.630917879,10,A39917,CYC1,Cytochrome c
+650,KRT18_Keratin,52.0,Structural support,Cytoplasm,5.943737513942766,10,A39917,KRT18,Keratin
+651,ALB_Albumin,66.5,Osmotic pressure regulation,Secreted,2.767514021920503,10,A39917,ALB,Albumin
+652,TUBA1B_Tubulin,50.5,Cell structure,Cytoplasm,-8.369745917,10,A39917,TUBA1B,Tubulin
+653,FTH1_Ferritin,474.0,Iron storage,Cytoplasm,8.101107652062367,10,A39917,FTH1,Ferritin
+654,CAT_Catalase,60.0,Breakdown of hydrogen peroxide,Peroxisome,8.987553393591426,10,A39917,CAT,Catalase
+655,GAPDH_GAPDH,36.0,Glycolysis,Cytoplasm,8.838224727743285,10,A39917,GAPDH,GAPDH
+656,FGA_Fibrinogen,340.0,Blood clotting,Plasma,-4.791897676,10,A39917,FGA,Fibrinogen
+657,ELN_Elastin,70.0,Elasticity of tissues,Extracellular,2.781774518423916,10,A39917,ELN,Elastin
+658,H1F0_Histone H1,21.0,DNA packaging,Nucleus,-5.346380291,10,A39917,H1F0,Histone H1
+659,LCT_Lactase,160.0,Breakdown of lactose,Secreted,3.5054227061229675,10,A39917,LCT,Lactase
+660,TP53_p53,53.0,Tumor suppression,Nucleus,-0.613012325,10,A39917,TP53,p53
+661,CTRC_Chymotrypsin,25.0,Protein digestion,Secreted,2.531645375,10,A39917,CTRC,Chymotrypsin
+662,HSPA1A_HSP70,70.0,Protein folding,Cytoplasm,4.88674506,10,A39917,HSPA1A,HSP70
+663,AMY1A_Alpha-amylase,56.0,Starch digestion,Secreted,4.715103851645335,10,A39917,AMY1A,Alpha-amylase
+664,HK1_Hexokinase,102.0,Glycolysis,Cytoplasm,0.5472203225237102,10,A39917,HK1,Hexokinase
+665,COL2A1_Collagen type II,285.0,Structural support,Extracellular,7.965076084790006,10,A39917,COL2A1,Collagen type II
+666,ACTB_Beta-actin,42.0,Cell structure,Cytoplasm,0.1997496393131044,10,A39917,ACTB,Beta-actin
+667,TTN_Troponin T,37.0,Muscle contraction,Cytoplasm,-9.759920771,10,A39917,TTN,Troponin T
+668,UBB_Ubiquitin,8.6,Protein degradation,Cytoplasm,-8.766669494,10,A39917,UBB,Ubiquitin
+669,LAMA2_Laminin,850.0,Cell adhesion,Extracellular,-3.44376308,10,A39917,LAMA2,Laminin
+670,ITGB1_Integrin,88.0,Cell adhesion,Membrane,8.418743509782743,10,A39917,ITGB1,Integrin
+671,PRDX1_Peroxiredoxin,22.0,Reduction of peroxides,Cytoplasm,6.529924936883393,10,A39917,PRDX1,Peroxiredoxin
+672,CASP3_Caspase-3,32.0,Apoptosis,Cytoplasm,-2.80135898,10,A39917,CASP3,Caspase-3
+673,SOD1_SOD1,32.5,Superoxide breakdown,Cytoplasm,9.372096218007698,10,A39917,SOD1,SOD1
+674,TF_Transferrin,77.0,Iron transport,Secreted,-1.255366143,10,A39917,TF,Transferrin
+675,GCG_Glucagon,3.5,Regulation of glucose levels,Secreted,-8.287562149,10,A39917,GCG,Glucagon
+676,F2_Thrombin,37.0,Blood clotting,Secreted,-9.47694475,10,A39917,F2,Thrombin
+677,NEFH_Neurofilament,110.0,Neuronal structure,Cytoplasm,5.976077807228595,10,A39917,NEFH,Neurofilament
+678,CALM1_Calmodulin,16.8,Calcium signaling,Cytoplasm,8.889446824421373,10,A39917,CALM1,Calmodulin
+679,PYGM_Glycogen phosphorylase,97.0,Glycogen breakdown,Cytoplasm,-5.735647647,10,A39917,PYGM,Glycogen phosphorylase
+680,HRAS_Ras protein,21.0,Signal transduction,Cytoplasm,2.8657781752727303,10,A39917,HRAS,Ras protein
+681,COL3A1_Collagen type III,300.0,Structural support,Extracellular,-2.264101099,10,A39917,COL3A1,Collagen type III
+682,COL4A1_Collagen type IV,185.0,Structural support,Extracellular,,10,A39917,COL4A1,Collagen type IV
+683,PKLR_Pyruvate kinase,57.0,Glycolysis,Cytoplasm,3.709295745989131,10,A39917,PKLR,Pyruvate kinase
+684,AK1_Adenylate kinase,21.7,ATP regeneration,Cytoplasm,-2.866670741,10,A39917,AK1,Adenylate kinase
+685,COL5A1_Collagen type V,184.0,Structural support,Extracellular,4.130308413955351,10,A39917,COL5A1,Collagen type V
+686,COL6A1_Collagen type VI,110.0,Structural support,Extracellular,2.823554487224456,10,A39917,COL6A1,Collagen type VI
+687,LAMB2_Laminin beta 2,210.0,Cell adhesion,Extracellular,-9.26671056,10,A39917,LAMB2,Laminin beta 2
+688,ND1_NADH dehydrogenase,40.0,Electron transport,Mitochondria,-1.470114982,10,A39917,ND1,NADH dehydrogenase
+689,ATP5F1_ATP synthase,55.0,ATP synthesis,Mitochondria,-6.596499814,10,A39917,ATP5F1,ATP synthase

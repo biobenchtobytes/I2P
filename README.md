@@ -1,2 +1,3 @@
 # I2P
-Material for I2P workshop
+
+Public material for the I2P workshop

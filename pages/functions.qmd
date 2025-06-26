@@ -1,0 +1,118 @@
+# Functions  {.unnumbered}
+
+## Python's batteries {.nostretch}
+
+![](images/bateries-included.png){fig-align="center" width=55%}
+
+<p font-size=55pt align="center">
+**Python comes with "batteries included".**
+</p>
+
+The standard library provides built-in support for lots of common tasks, including the ability to interact with the operating system, open, read and write files, perform numerical & mathematical operations, and many more.
+
+## Fundamentals
+
+Let's take a look at a simple example:
+
+```{python}
+# | echo: True
+print("Hello World")
+```
+
+*Functions* take the form:
+
+<p font-size=55pt align="center">
+```function_name(arguments)``` 
+</p>
+
+where the ```arguments``` are the elements we want to apply the function to. Different functions require a different number and type of arguments.
+
+::: {.callout-important}
+### When using a function you must always use parentheses, even if they’re empty, so that Python knows a function is being called.
+:::
+
+## Common examples
+
+In addition to ```print```, there are other built-in functions that behave intuitively.
+
+
+Measuring the length of something:
+```{python}
+#| echo: True
+len('ABCDEFG')
+```
+
+
+Finding the minimum of a list of values:
+```{python}
+#| echo: True
+min(1, 2, 3, 4, 5)
+```
+
+Finding the maximum of a list of values:
+```{python}
+#| echo: True
+max(1, 2, 3, 4, 5)
+```
+
+:::{.callout-note}
+### Every function takes a different number of arguments, and every function returns *something*.
+:::
+
+<!-- Every function call produces some result.
+If the function doesn’t have a useful result to return, it usually returns the special value None. None is a Python object that stands in anytime there is no value. -->
+
+## Default arguments
+
+Functions may have default values for some arguments. For example, ```round``` will round off a floating-point number:
+
+```{python}
+#| echo: True
+round(3.3333333333, 4)
+```
+
+
+By default, it will round to zero decimal places if the second argument (the number of decimal places) is not provided.
+
+```{python}
+#| echo: True
+round(3.3333333333)
+```
+
+:::{.callout-important}
+### The position of the arguments here determines what is the number to be rounded, and what is the number of places to be rounded to. This is called providing *positional arguments*, and can lead to some hard-to-track bugs!
+:::
+
+## Help!
+
+::: {.callout-tip}
+### How do you find out what arguments, and in what order, different built-in functions require? 
+:::
+
+Of course, you could always consult the [official documentation](https://docs.python.org/3/library/functions.html)
+
+There is also a built-in ```help``` function that gives access to this info in your editor!
+```{python}
+#| echo: True
+help(max)
+```
+
+::: {.callout-note}
+### In jupyter, you can also add a ```?``` after a function name.
+:::
+
+<!-- --- -->
+
+## In practice
+
+::: {.callout-caution}
+
+### Exercises
+
+1.1 Printing fundamentals
+
+1.2 Using ```min()``` and ```max()``` to assess values
+
+1.3 Explore the effect of default arguments and improperly formatted function calls
+
+:::

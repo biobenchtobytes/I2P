@@ -1,0 +1,258 @@
+
+# Wrangling {.unnumbered}
+
+![](images/wrangling.png){width="650" fig-align="center"} 
+
+<p font-size=55pt align="center">
+**Data wrangling transforms raw data into a structured format.** 
+</p>
+
+The process includes collecting, tidying, and preprocessing raw data so that it can be easily analyzed and visualised. We will use ```pandas``` for these tasks.
+
+## Reading
+
+::: {.callout-tip}
+### What types of data files do you generate in your research?
+:::
+
+
+First, we need to access our data and store it in a variable.
+
+Pandas has a function that allows us to *read in* an excel document: ```read_excel()```. 
+
+```{python}
+#| echo: True
+#| output-location: fragment
+# import pandas, aliased as pd
+import pandas as pd
+
+# Import an Excel file called "example" from the data folder
+df = pd.read_excel('data/example_proteins.xlsx', sheet_name='Sheet1')
+
+# Visualise the first few rows
+print(df.head(2))
+```
+
+```{python}
+#| echo: True
+# Visualise the first few rows
+df.head(2)
+```
+
+Pandas has many other ```read``` functions for all types of data.
+
+![](images/pandas_read.png){width="700" fig-align="center"} 
+
+```{python}
+#| echo: True
+# From a plain text document:
+df = pd.read_table('data/example_proteins.txt', delimiter='\t')
+
+# From a csv document:
+df = pd.read_csv('data/example_proteins.csv')
+```
+
+## Cleaning columns
+
+Cleaning standardises and simplifies a dataset.
+
+This might involve adjusting column names, correcting data types, and separating pieces of information from one column into many.
+
+We can access the column names for a dataframe using ```.columns```.
+
+```{python}
+#| echo: False
+#| output: False
+df = pd.read_excel('data/example_proteins.xlsx', sheet_name='Sheet1')
+```
+
+```{python}
+#| echo: True
+print(df.columns)
+```
+
+We can drop columns by name using the ```.drop()``` method.
+
+```{python}
+#| echo: True
+df.drop('Subcellular Location', axis=1)
+df.head(2)
+```
+
+We can access the column names for a dataframe using ```.columns```.
+
+```{python}
+#| echo: False
+#| output: False
+df = pd.read_excel('data/example_proteins.xlsx', sheet_name='Sheet1')
+```
+
+```{python}
+#| echo: True
+print(df.columns)
+```
+
+We can drop columns by name using the ```.drop()``` method.
+
+```{python}
+#| echo: True
+df.drop('Subcellular Location', axis=1, inplace=True)
+df.head(2)
+```
+::: {.callout-note}
+### Explore other methods available for DataFrame operations [here](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#:~:text=of%20the%20DataFrame.-,Methods,-abs()).
+:::
+
+We can update the column names for a dataframe by directly updating the ```.columns```, or using the ```.rename()``` method.
+
+```{python}
+#| echo: True
+df.columns = ['protein', 'molecular_weight_kda', 'function']
+df.head(2)
+```
+
+We can update the column names for a dataframe by directly updating the ```.columns```, or using the ```.rename()``` method.
+
+```{python}
+#| echo: True
+df.rename(columns={
+  'Protein': 'protein', 
+  'Molecular Weight (kDa)': 'molecular_weight_kda', 
+  'Function': 'function'}, inplace=True)
+       
+df.head(2)
+```
+
+::: {.callout-note}
+### Adopt variable naming conventions (all lowercase characters, separated by underscores) to make column names consistent and easy to access.
+:::
+
+
+To select individual columns, we can then use ```[colname]``` or ```.colname```.
+
+::: {.columns}
+::: {.column}
+:::{.fragment}
+```{python}
+#| echo: True
+df['protein']
+```
+:::
+:::
+
+::: {.column}
+:::{.fragment}
+```{python}
+#| echo: True
+df.protein
+```
+:::
+:::
+:::
+
+:::{.fragment}
+::: {.callout-important}
+### The ```.``` notation only works when the column names do not have spaces.
+:::
+:::
+
+```{python}
+#| echo: False
+#| output: False
+df = pd.read_csv('data/example_proteins.csv')
+df.drop([col for col in df.columns.tolist() if 'Unnamed: ' in col], axis=1, inplace=True)
+df.rename(columns={
+  'Protein': 'protein', 
+  'Molecular Weight (kDa)': 'molecular_weight_kda', 
+  'Subcellular Location': 'subcellular_location', 
+  'log(2)_expression': 'expression_log2', 
+  'Time point (h)': 'time_h', 
+  'Donor': 'donor_id', 
+  'Function': 'function'}, inplace=True)
+df['molecular_weight_kda'] = df['molecular_weight_kda'].astype(str)
+
+```
+
+## Cleaning data types
+
+The ```dtype``` of each column dictates what operations we can do with it's data. 
+
+```{python}
+#| echo: True
+print(df.dtypes)
+```
+
+We can convert between data types using the ```.astype()``` method.
+
+```{python}
+#| echo: True
+#| output-location: fragment
+df['molecular_weight_kda'].astype(float)
+
+print(df.dtypes)
+```
+
+The ```dtype``` of each column dictates what operations we can do with it's data. 
+
+```{python}
+#| echo: True
+print(df.dtypes)
+```
+
+We can convert between data types using the ```.astype()``` method.
+
+```{python}
+#| echo: True
+df['molecular_weight_kda'] = df['molecular_weight_kda'].astype(float)
+
+print(df.dtypes)
+```
+
+Often string data are composites joined by one or more *delimiters*. To use these data elements we need to separate elements into different columns using the ```.str``` and ```.split``` methods.
+
+::: {.columns}
+::: {.column}
+```{python}
+#| echo: True
+df['protein']
+```
+:::
+
+::: {.column}
+```{python}
+#| echo: True
+df['protein'].str.split('_')
+```
+:::
+:::
+
+## Cleaning composite data
+
+Often string data are composites joined by one or more *delimiters*. To use these data elements we need to separate elements into different columns using the ```.str``` and ```.split``` methods.
+
+```{python}
+#| echo: True
+# Assign split strings to separate columns using 'expand' keyword
+df[['protein_name', 'gene']] = df['protein'].str.split('_', expand=True)
+
+df.head(2)
+```
+
+```{python}
+df.to_csv(f'data/clean_data.csv')
+```
+
+::: {.callout-note}
+
+### These operations will be very dataset specific, and each dataset will likely require a combination of approaches.
+:::
+
+
+## In practice
+
+::: {.callout-caution}
+### Exercises
+
+3.1 Reading and cleaning
+
+:::
