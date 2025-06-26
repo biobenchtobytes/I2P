@@ -1,0 +1,429 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Intro2Python",
+    "section": "",
+    "text": "COURSE OVERVIEW\nWelcome to the Intro2Python workshop! Here, you will find the materials we discuss during the workshops theoretical sessions. This material should be used in conjunction with the corresponding practical exercise notebooks made available to you during the workshop.\n\nDAY 1: FUNDAMENTALS\n\n\nSession 1\n\nPython fundamentals\nBuilt-in functions\nLibraries\nVariables & types\n\n\nSession 2\n\nCollections\nProgram flow control\n\n\n\n\n\n \n \n\n\n\n\nDAY 2: DEALING WITH DATA\n\n\nSession 3\n\nData wrangling\nData tidying\nData polishing\n\n\nSession 4\n\nData visualisation\nResources"
+  },
+  {
+    "objectID": "pages/functions.html#pythons-batteries",
+    "href": "pages/functions.html#pythons-batteries",
+    "title": "Functions",
+    "section": "Python’s batteries",
+    "text": "Python’s batteries\n\n\n\n\n\n\nPython comes with “batteries included”.\n\nThe standard library provides built-in support for lots of common tasks, including the ability to interact with the operating system, open, read and write files, perform numerical & mathematical operations, and many more."
+  },
+  {
+    "objectID": "pages/functions.html#fundamentals",
+    "href": "pages/functions.html#fundamentals",
+    "title": "Functions",
+    "section": "Fundamentals",
+    "text": "Fundamentals\nLet’s take a look at a simple example:\n\nprint(\"Hello World\")\n\nHello World\n\n\nFunctions take the form:\n\nfunction_name(arguments)\n\nwhere the arguments are the elements we want to apply the function to. Different functions require a different number and type of arguments.\n\n\n\n\n\n\nWhen using a function you must always use parentheses, even if they’re empty, so that Python knows a function is being called."
+  },
+  {
+    "objectID": "pages/functions.html#common-examples",
+    "href": "pages/functions.html#common-examples",
+    "title": "Functions",
+    "section": "Common examples",
+    "text": "Common examples\nIn addition to print, there are other built-in functions that behave intuitively.\nMeasuring the length of something:\n\nlen('ABCDEFG')\n\n7\n\n\nFinding the minimum of a list of values:\n\nmin(1, 2, 3, 4, 5)\n\n1\n\n\nFinding the maximum of a list of values:\n\nmax(1, 2, 3, 4, 5)\n\n5\n\n\n\n\n\n\n\n\nEvery function takes a different number of arguments, and every function returns something."
+  },
+  {
+    "objectID": "pages/functions.html#default-arguments",
+    "href": "pages/functions.html#default-arguments",
+    "title": "Functions",
+    "section": "Default arguments",
+    "text": "Default arguments\nFunctions may have default values for some arguments. For example, round will round off a floating-point number:\n\nround(3.3333333333, 4)\n\n3.3333\n\n\nBy default, it will round to zero decimal places if the second argument (the number of decimal places) is not provided.\n\nround(3.3333333333)\n\n3\n\n\n\n\n\n\n\n\nThe position of the arguments here determines what is the number to be rounded, and what is the number of places to be rounded to. This is called providing positional arguments, and can lead to some hard-to-track bugs!"
+  },
+  {
+    "objectID": "pages/functions.html#help",
+    "href": "pages/functions.html#help",
+    "title": "Functions",
+    "section": "Help!",
+    "text": "Help!\n\n\n\n\n\n\nHow do you find out what arguments, and in what order, different built-in functions require?\n\n\n\n\n\n\nOf course, you could always consult the official documentation\nThere is also a built-in help function that gives access to this info in your editor!\n\nhelp(max)\n\nHelp on built-in function max in module builtins:\n\nmax(...)\n    max(iterable, *[, default=obj, key=func]) -&gt; value\n    max(arg1, arg2, *args, *[, key=func]) -&gt; value\n    \n    With a single iterable argument, return its biggest item. The\n    default keyword-only argument specifies an object to return if\n    the provided iterable is empty.\n    With two or more arguments, return the largest argument.\n\n\n\n\n\n\n\n\n\n\n\nIn jupyter, you can also add a ? after a function name."
+  },
+  {
+    "objectID": "pages/functions.html#in-practice",
+    "href": "pages/functions.html#in-practice",
+    "title": "Functions",
+    "section": "In practice",
+    "text": "In practice\n\n\n\n\n\n\nExercises\n\n\n\n1.1 Printing fundamentals\n1.2 Using min() and max() to assess values\n1.3 Explore the effect of default arguments and improperly formatted function calls"
+  },
+  {
+    "objectID": "pages/libraries.html#importing",
+    "href": "pages/libraries.html#importing",
+    "title": "Libraries",
+    "section": "Importing",
+    "text": "Importing\nA library’s functionality needs to be brought into Python’s working memory using the import keyword. Components can then be accessed using the . notation.\n\nimport math\n\nprint('pi is', math.pi)\nprint('cos(pi) is', math.cos(math.pi))\n\npi is 3.141592653589793\ncos(pi) is -1.0\n\n\nIndividual modules or functions can be imported, allowing direct access:\n\nfrom math import pi\n\nprint(pi)\n\n3.141592653589793"
+  },
+  {
+    "objectID": "pages/libraries.html#a-note-of-caution",
+    "href": "pages/libraries.html#a-note-of-caution",
+    "title": "Libraries",
+    "section": "A note of caution",
+    "text": "A note of caution\nAnother option is to ‘alias’ a module when importing; this allows us to make programs more succint without loosing clarity.\n\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\ntype(sns.scatterplot)\n\nfunction\n\n\nA final way of importing from libraries that you may come across is the star import:\n\nprint(type(scatterplot))\n\nNameError: name 'scatterplot' is not defined\n\n\n\nfrom seaborn import *\nprint(type(scatterplot))\n\n&lt;class 'function'&gt;\n\n\n\n\n\n\n\n\nThis method is generally discouraged, as it polutes your namespace - the collection of symbolic names and objects that each name references"
+  },
+  {
+    "objectID": "pages/libraries.html#some-useful-examples",
+    "href": "pages/libraries.html#some-useful-examples",
+    "title": "Libraries",
+    "section": "Some useful examples",
+    "text": "Some useful examples\n\n\n\n\n\nData manipulation\n\n\n\n\nnumpy\n\n\nscipy\n\n\npandas\n\n\n\n\n\n\nData visualisation\n\n\n\n\nmatplotlib\n\n\nseaborn\n\n\nbokeh\n\n\nplotly\n\n\n\n\n\n\n\nImage processing\n\n\n\n\nopenCV2\n\n\nnapari\n\n\nscikit-image\n\n\n\n\n\n\nMachine learning\n\n\n\n\npytorch\n\n\nkeras\n\n\ntensorflow\n\n\n\n\n\n\n\n\n\n\n\nAnaconda comes preinstalled with many basic data science packages."
+  },
+  {
+    "objectID": "pages/libraries.html#finding-and-installing",
+    "href": "pages/libraries.html#finding-and-installing",
+    "title": "Libraries",
+    "section": "Finding and installing",
+    "text": "Finding and installing\nLibraries can be found and installed from the Python Package Index (PyPI) using package managers like pip or conda via the terminal.\n\n\n\n\n\n\nA detailed discussion of package management is a workshop of it’s own! For now, you should be aware that not all versions of all packages can be installed simultaneously and there are ways to manage this using virtualenv or conda.\n\n\n\n\n\n\n\n\n\n\n\n\nJupyter also provides a special magic command %pip install that allows you to install packages directly from a notebook, rather than through the terminal."
+  },
+  {
+    "objectID": "pages/libraries.html#in-practice",
+    "href": "pages/libraries.html#in-practice",
+    "title": "Libraries",
+    "section": "In practice",
+    "text": "In practice\n\n\n\n\n\n\nExercises\n\n\n\n1.4 Importing common libraries\n1.5 Installing additional libraries"
+  },
+  {
+    "objectID": "pages/libraries.html#custom-functions",
+    "href": "pages/libraries.html#custom-functions",
+    "title": "Libraries",
+    "section": "Custom functions",
+    "text": "Custom functions\nWe can also write our own functions! Custom functions encapsulate repetitive tasks into reusable blocks of code, break down complex problems into smaller manageable pieces, and make code cleaner and more modular.\n\n\n\n\n\n\n\n\n\n\n\nFunctions are an intermediate skill that improve code readability, reusability, and allow testing. Learn more about custom functions here."
+  },
+  {
+    "objectID": "pages/variables-types.html#naming-conventions",
+    "href": "pages/variables-types.html#naming-conventions",
+    "title": "Variables",
+    "section": "Naming conventions",
+    "text": "Naming conventions\nThere are a few rules, and a few best practices when it comes to naming variables.\n\n🎗️ should be meaningful so others (and future you!) will intuitively know what it is\n✅ can only contain letters, digits, and underscores\n⛔ cannot start with a digit\n🔡 are case sensitive (age, Age and AGE are three different variables)\n\n\n\n\n\n\n\nThe Python style guide PEP-8 recommends lowercase letters for function and variable names, and snake_case for descriptive naming as opposed to CamelCase.\n\n\n\n\n\n\n\n\n\n\n\n\nVariables are available once created until the kernel is stopped or restarted. This means that in Jupyter notebooks, variables persist between cells which can cause weird bugs if cells are executed out of order!"
+  },
+  {
+    "objectID": "pages/variables-types.html#types",
+    "href": "pages/variables-types.html#types",
+    "title": "Variables",
+    "section": "Types",
+    "text": "Types\nAll values have a type in python, which their containers (variables) inheret.\n\n\n\n\n\nSo far, we have seen:\n\nInteger (int): represents positive or negative whole numbers.\nFloating point number (float): represents real numbers.\nCharacter string (str): a collection of text.\nBoolean (bool): either True or False"
+  },
+  {
+    "objectID": "pages/variables-types.html#numerical-operations",
+    "href": "pages/variables-types.html#numerical-operations",
+    "title": "Variables",
+    "section": "Numerical operations",
+    "text": "Numerical operations\nNumerical variables behave (mostly!) as you would expect.\nWe can perform mathematical operations with int and/or float variables as if they were values.\n\nx = 11\nprint(f'half {x} is', x / 2.0)\nprint(f'{x} squared is', x ** 2)\nprint(f'one more than {x} is', x + 1)\nprint(f'7 less than {x} is', x - 7)\n\nhalf 11 is 5.5\n11 squared is 121\none more than 11 is 12\n7 less than 11 is 4\n\n\n\n\n\n\n\n\nPython has three types of division operator: / performs floating-point division, // performs integer (whole-number) floor division, % (or modulo) returns the remainder from integer division."
+  },
+  {
+    "objectID": "pages/variables-types.html#string-operations",
+    "href": "pages/variables-types.html#string-operations",
+    "title": "Variables",
+    "section": "String operations",
+    "text": "String operations\nStrings can also be manipulated by the + and * operators.\n\nmy_name = 'Dezerae' * 5 + ' ' + 'Cox'\nprint(my_name)\n\nDezeraeDezeraeDezeraeDezeraeDezerae Cox\n\n\n\n\n\n\n\n\nStrings also have a series of special methods.\n\n\n\n\n\n\nSometimes numbers become strings which need to be converted:\n\nprint(1 + int('2'))\nprint(str(1) + '2')\n\n3\n12\n\n\n\n\n\n\n\n\nThis is a very common issue when cleaning real-world data. It is always a good idea to check if your numerical variables are actually numerical!"
+  },
+  {
+    "objectID": "pages/variables-types.html#notes-of-caution",
+    "href": "pages/variables-types.html#notes-of-caution",
+    "title": "Variables",
+    "section": "Notes of caution",
+    "text": "Notes of caution\n\n\n\n\n\n\nVariables are only updated by reassignment, and are assigned in order.\n\n\n\n\n\n\n\nvariable_one = 1\nvariable_two = 5 * variable_one\nvariable_one = 2\nprint('first is', variable_one, 'and second is', variable_two)\n\nfirst is 2 and second is 5\n\n\n\n\n\n\n\n\nWhere reasonable, float() and int() will convert a string. However, if the conversion doesn’t make sense an error will occur.\n\n\n\n\n\n\n\nprint(\"string to float:\", float(\"3.4\"))\n\nstring to float: 3.4\n\n\n\nprint(\"float to int:\", int(3.4))\n\nfloat to int: 3\n\n\n\nprint(\"string to float:\", float(\"Hello world!\"))\n\nValueError: could not convert string to float: 'Hello world!'"
+  },
+  {
+    "objectID": "pages/variables-types.html#in-practice",
+    "href": "pages/variables-types.html#in-practice",
+    "title": "Variables",
+    "section": "In practice",
+    "text": "In practice\n\n\n\n\n\n\nExercises\n\n\n\n1.6 Creating and printing variables\n1.7 Numerical operations\n1.8 String operations\n1.9 Converting between types"
+  },
+  {
+    "objectID": "pages/collections.html#lists-tuples",
+    "href": "pages/collections.html#lists-tuples",
+    "title": "Collections",
+    "section": "Lists & tuples",
+    "text": "Lists & tuples\nLists and tuples are both an ordered collection of any number and any type of items.\n\nmy_list = [val1, 'val2', 3]\n\n\nmy_tuple = (val1, 'val2', 3)\n\nThese collections can be created directly using their parentheses. You can also use the equivalent built-in function to convert between collection types:\n\na = [1, 3, 9, 27]\nb = (1, 3, 9, 27)\nc = list(b)\nprint(a, b, c)\n\n[1, 3, 9, 27] (1, 3, 9, 27) [1, 3, 9, 27]\n\n\nThe key difference between these two collections is mutability.Individual elements of lists can be updated, added or removed after creation making them mutable. In contrast, tuples are immutable - items can be retreived but not altered."
+  },
+  {
+    "objectID": "pages/collections.html#indexing-slicing",
+    "href": "pages/collections.html#indexing-slicing",
+    "title": "Collections",
+    "section": "Indexing & slicing",
+    "text": "Indexing & slicing\nWe can access individual elements in lists or tuples according to their index.\n\n\n\n\n\n\nPython is zero indexed, meaning it starts counting at zero.\n\n\n\n\n\n\n\na = [1, 3, 9, 27]\na[0] = 2\nprint(a)\n\n[2, 3, 9, 27]\n\n\n\na.append(27*3)\nprint(a)\n\n[2, 3, 9, 27, 81]\n\n\n\na.remove(a[-2])\nprint(a)\n\n[2, 3, 9, 81]\n\n\n\na[0:2] = 'H'\nprint(a)\n\n['H', 9, 81]\n\n\n\nc = ('G','C','A','T')\nprint(c[0])\n\nG\n\n\nHowever, remember they are immutable:\n\nc[2] = 'hello'\n\nTypeError: 'tuple' object does not support item assignment\n\n\nStrings are essentially a tuple of characters that can be sliced and indexed.\n\nmy_seq = 'GAT CTA GTC TAG CTA'\nprint(\n    f'First: {my_seq[0]}', \n    f'Slice: {my_seq[2:7]}', \n    f'Another slice: {my_seq[:2]}')\n\nFirst: G Slice: T CTA Another slice: GA\n\n\nHowever, remember they are immutable:\n\nmy_seq[3] = 'g'\n\nTypeError: 'str' object does not support item assignment\n\n\n\n\n\n\n\n\nYou can check for the presence of a substring using the in operator:\n\n\n\n\n\n\n\nmy_seq = 'GAT CTA GTC TAG CTA'\nprint('GTC' in my_seq)\nprint('TAG' not in my_seq)\n\nTrue\nFalse"
+  },
+  {
+    "objectID": "pages/collections.html#sets",
+    "href": "pages/collections.html#sets",
+    "title": "Collections",
+    "section": "Sets",
+    "text": "Sets\nSets are an unordered collection of unique elements.\n\nmy_set = {val1, val2, val3}\n\nPython gives you access to a range of mathematical operations applicable to sets, including union, intersection, and difference.\nLet’s look at sets in action:\n\ns1 = set([2, 4, 6, 8, 10])\ns2 = {4, 5, 6, 7}\n\nprint(\"Union:\", s1 | s2)\nprint(\"Intersection:\", s1 & s2)\n\nUnion: {2, 4, 5, 6, 7, 8, 10}\nIntersection: {4, 6}\n\n\n\n\n\n\n\n\nElements of a set must be those which cannot be internally modified."
+  },
+  {
+    "objectID": "pages/collections.html#dictionaries",
+    "href": "pages/collections.html#dictionaries",
+    "title": "Collections",
+    "section": "Dictionaries",
+    "text": "Dictionaries\nDictionaries offer a way to access information by name rather than index:\n\ndictionary = {key : value}\n\nKeys must be unique and immutable, but values can be of any data type.\nLet’s see a few ways to add information to a dictionary:\n\nmy_dict = dict([('key1', 'val1'), ('key2', 'val2'), ('key3', 'val3')])\n\nnew_dictionary = dict(zip(['key1', 'key2', 'key3'], ['val1', 'val2', 'val3']))\n\ngenes = {\n    'HSP70A1A': 1.2548,  'TMEM218':  0.5273,  \n    'MYMK': -0.4869,  'SNAP23': 0.6749,  \n    'TAF4': -2.6487, }\ngenes['SYNCA'] = 0.1547\ngenes['MYMK'] = 1.047\n\nWe can access the value associated with a key:\n\ngenes = {\n    'HSP70A1A': 1.2548,  'TMEM218':  0.5273, \n    'MYMK': -0.4869,  'SNAP23': 0.6749, \n    'TAF4': -2.6487, }\nprint(genes['HSP70A1A'])\n\n1.2548\n\n\nIf you try to retrieve a key that doesn’t exist, you will receive a KeyError.\n\nprint(genes['HSP90'])\n\nKeyError: 'HSP90'\n\n\n… unless you use the .get() method!\n\nprint(genes.get('HSP90'))\n\nNone\n\n\nYou can get a list of keys, values and even matched key-value pairs.\n\ngenes.keys()\n\ndict_keys(['HSP70A1A', 'TMEM218', 'MYMK', 'SNAP23', 'TAF4'])\n\n\n\ngenes.values()\n\ndict_values([1.2548, 0.5273, -0.4869, 0.6749, -2.6487])\n\n\n\ngenes.items()\n\ndict_items([('HSP70A1A', 1.2548), ('TMEM218', 0.5273), ('MYMK', -0.4869), ('SNAP23', 0.6749), ('TAF4', -2.6487)])\n\n\n\n\n\n\n\n\nAs of Python3, dictionaries are guaranteed to be ordered."
+  },
+  {
+    "objectID": "pages/collections.html#in-practice",
+    "href": "pages/collections.html#in-practice",
+    "title": "Collections",
+    "section": "In practice",
+    "text": "In practice\n\n\n\n\n\n\nExercises\n\n\n\n2.1 Lists\n2.2 Sets\n2.3 Dictionaries"
+  },
+  {
+    "objectID": "pages/program-flow-control.html#mechanisms-to-control-program-flow",
+    "href": "pages/program-flow-control.html#mechanisms-to-control-program-flow",
+    "title": "Program flow",
+    "section": "Mechanisms to control program flow",
+    "text": "Mechanisms to control program flow\nIn python, program flow can be altered in four main ways:\n\nWith conditional statements that act as a branching mechanism.\nUsing repetitive loops through the same block of code.\nUsing custom functions (subroutines) to jump to an entirely different spot, even in a different file or module, to do a task before (usually) jumping back again.\nThrough catching errors and executing different chunks of code accordingly.\n\nTo use these control mechanisms, we first need a way to tell python how our code is grouped together."
+  },
+  {
+    "objectID": "pages/program-flow-control.html#indentation",
+    "href": "pages/program-flow-control.html#indentation",
+    "title": "Program flow",
+    "section": "Indentation",
+    "text": "Indentation\nIndentation, or leading whitespace, is extremely important in Python.\nWhere other languages use specific begin and end statements or curly braces {}, python uses indentation to identify which code is part of discrete blocks.\n\nStatement_1:\n\n    Command_A # statement 1 block\n    Command_B # statement 1 block\n\n    Statement_2: # statement 1 block\n\n        Command_C # statement 2 block\n        Command_D # statement 2 block\n\n    Command_E # statement 1 block\n\nCommand_F # outside all the blocks\n\n\n\n\n\n\n\n\nThe style guide, PEP 8, recommends spaces instead of tabs for indentation."
+  },
+  {
+    "objectID": "pages/program-flow-control.html#conditional-control",
+    "href": "pages/program-flow-control.html#conditional-control",
+    "title": "Program flow",
+    "section": "Conditional control",
+    "text": "Conditional control\n\nThe if statement\nIn the real world, we often evaluate information to choose a course of action:\n\n\n\n\n\n\nIf the sun is shining, then I’ll go to the beach.\n\nIn Python, the if statement is how we perform this sort of decision making.\nThe most basic if statement has the format:\nif expr: # evaluated as a boolean\n    statement # valid python operation which is indented\nSo, our beach example might look like:\nif sun_shining:\n    go_beach = True\nBut what if we aren’t going to the beach - how do we decide what to do instead?\nif sun_shining:\n    go_beach = True\nelse: # This will be the default option\n    go_shopping = True \nWe can also offer an alternative using elif:\nif sun_shining:\n    go_beach = True\nelif snowing:\n    go_skiing = True\nelse: # This will be the default option\n    go_shopping = True \nWe can even offer multiple alternatives using elif:\nif sun_shining:\n    go_beach = True\nelif snowing:\n    go_skiing = True\nelif raining:\n    stay_home = True\nelse: # This will be the default option\n    go_shopping = True \n\n\n\n\n\n\nelse and elif blocks are optional, but if used must contain indented code\n\n\n\n\n\n\nSource: RealPython\n\n\nOperators\nWhat about if we want to connect our decision to the temperature instead?\nPython has a standard collection of comparison (or relational) operators:\n\n# is less than\ntemperature = 11\nprint(temperature &lt; 10)\n\nFalse\n\n\n\n# is greater than\ntemperate = 11\nprint(temperature &gt; 10)\n\nTrue\n\n\nWe can even combine comparisons to check if the temperature is in a range:\n\ntemperature = 7\n\nif temperature &gt; 0 and temperature &lt; 10:\n    print(\"Go to the beach! 🏖\")\n    \nelif temperature &lt; -10 or temperature &gt; 40:\n    print(\"Stay home\")\n\nGo to the beach! 🏖\n\n\n\n\n\nOperator\nDescription\nExample\nOutcome\n\n\n\n\n&lt;\nless than\n1 &lt; 2\nTrue\n\n\n&gt;\ngreater then\n1 &gt; 2\nFalse\n\n\n&lt;=\nequal or less than\n2 &lt;= 2\nTrue\n\n\n&gt;=\nequal or greater than\n1 &gt;= 1\nTrue\n\n\n==\nequality\n1 == 2\nFalse\n\n\n!=\nnon equality\n1 != 2\nTrue\n\n\nis\nobjects are identical\n\n\n\n\nis not\nobjects not identical\n\n\n\n\n\n\ntoday = 500\ntomorrow = 500\nprint(today == tomorrow) # True\nprint(today is tomorrow) # False\n\nTrue\nFalse\n\n\nAll objects can be assigned a status of “truthfulness”; generally empty containers are considered to be False:\n\n\n\nFalse value\nDescription\n\n\n\n\nNone\nnumeric equality\n\n\nFalse\nFalse boolean\n\n\n0\n0 integer\n\n\n0.0\n0.0 floating point\n\n\n\"\"\nempty string\n\n\n()\nempty tuple\n\n\n[]\nempty list\n\n\n{}\nempty dictonary\n\n\nset()\nempty set\n\n\n\nAll others evaluate to True."
+  },
+  {
+    "objectID": "pages/program-flow-control.html#in-practice",
+    "href": "pages/program-flow-control.html#in-practice",
+    "title": "Program flow",
+    "section": "In practice",
+    "text": "In practice\n\n\n\n\n\n\nExercises\n\n\n\n2.4 Conditional control"
+  },
+  {
+    "objectID": "pages/program-flow-control.html#repetitive-operations",
+    "href": "pages/program-flow-control.html#repetitive-operations",
+    "title": "Program flow",
+    "section": "Repetitive operations",
+    "text": "Repetitive operations\n\nThe for loop\nIn the real world, we often need to repeat an action:\n\n\n\n\n\n\nPut five balls in the bucket\n\nIn Python, the for loop allows us to perform this type of iterative repetition.\nA for loop executes commands in that block once for each value in a collection:\nfor item in collection: \n    # item takes on each value in the collection\n    statement # valid python operation that is indented\nSo, to put each ball into the bucket:\ntoys = ['ball1', 'ball2', 'ball3', 'ball4', 'ball5']\n\nfor ball in toys:\n    bucket.append(ball)\n\n\nThe bucket contains: ['ball1']\nThe bucket contains: ['ball1', 'ball2']\nThe bucket contains: ['ball1', 'ball2', 'ball3']\nThe bucket contains: ['ball1', 'ball2', 'ball3', 'ball4']\nThe bucket contains: ['ball1', 'ball2', 'ball3', 'ball4', 'ball5']\n\n\n\n\n \n \n\n\nThe same process works with any collection:\n\ntoys = {\n    'ball1': 'orange', 'ball2': 'purple', \n    'ball3': 'orange', 'ball4': 'purple', \n    'ball5': 'orange'}\n\nfor ball in toys.keys():\n    bucket.append(ball)\n\nWhat if we only want to collect the orange balls?\n\ntoys = {\n    'ball1': 'orange', 'ball2': 'purple', \n    'ball3': 'orange', 'ball4': 'purple', \n    'ball5': 'orange'}\n\nfor ball, colour in toys.items():\n    if colour == 'orange':\n        bucket.append(ball)\n\n\n\n\n\n\n\nLoop variables can be called anything, but beware! Their state persists after the loop is finished.\n\n\n\n\n\n\n\n\nModifying flow\nWhat if we want to avoid one specific colour?\n\n\n\n\n\n\nAvoid the green balls\n\nAlong with if, the continue and break statements allow us to modify which parts of the block are applied to the item.\ncontinue moves the internal counter directly to the next iteration without applying any code from lower in the block, and break stops the iteration immediately.\nWhat if we want to avoid one specific colour?\n\n\n\n\n\n\nAvoid the green balls\n\n\ntoys = [\n    'ball1-orange', 'ball2-pink', 'ball3-green', \n    'ball4-blue', 'ball5-purple']\nbucket = []\nfor ball in toys:\n    if 'green' in ball:\n        continue\n    bucket.append(ball)\nprint(f'The bucket contains: {bucket}')\n\nThe bucket contains: ['ball1-orange', 'ball2-pink', 'ball4-blue', 'ball5-purple']\n\n\n\ntoys = [\n    'ball1-orange', 'ball2-pink', 'ball3-green', \n    'ball4-blue', 'ball5-purple']\nbucket = []\nfor ball in toys:\n    if 'green' in ball:\n        break\n    bucket.append(ball)\nprint(f'The bucket contains: {bucket}')\n\nThe bucket contains: ['ball1-orange', 'ball2-pink']\n\n\n\n\n\n\n\n\nWhat is happening here?\n\n\n\n\n\n\n\ntoys = [\n    'ball1-orange', 'ball2-pink', 'ball3-green', \n    'ball4-blue', 'ball5-purple']\nbucket = []\nfor ball in toys:\n    toys.remove(ball)\n    bucket.append(ball)\nprint(f'The toys are: {toys}')\nprint(f'The bucket contains: {bucket}')\n\nThe toys are: ['ball2-pink', 'ball4-blue']\nThe bucket contains: ['ball1-orange', 'ball3-green', 'ball5-purple']\n\n\n\n\n\n\n\n\nAn internal counter is used to keep track of which item is used next, and this is incremented on each iteration. If you modify the collection while iterating, you will get some interesting bugs!\n\n\n\n\n\n\n\n\nBuilt-in iterators\nThe range() function allows you to iterate over a numeric sequence.\n\nmy_list = []\nfor x in range(8):\n    print(\"This round x is equal to:\", x)\n    my_list.append(x*x)\nmy_list\n\nThis round x is equal to: 0\nThis round x is equal to: 1\nThis round x is equal to: 2\nThis round x is equal to: 3\nThis round x is equal to: 4\nThis round x is equal to: 5\nThis round x is equal to: 6\nThis round x is equal to: 7\n\n\n[0, 1, 4, 9, 16, 25, 36, 49]\n\n\nGiven a collection, enumerate() generates a tuple containing each value and it’s index.\n\nletters = ['A','C','G']\nfor index, letter in enumerate(letters):\n    print(index, letter)\n\n0 A\n1 C\n2 G\n\n\n\nnumbered_letters = list(enumerate(letters))\nprint(numbered_letters)\n\n[(0, 'A'), (1, 'C'), (2, 'G')]"
+  },
+  {
+    "objectID": "pages/program-flow-control.html#in-practice-1",
+    "href": "pages/program-flow-control.html#in-practice-1",
+    "title": "Program flow",
+    "section": "In practice",
+    "text": "In practice\n\n\n\n\n\n\nExercises\n\n\n\n2.5 Repetitive operations"
+  },
+  {
+    "objectID": "pages/data-wrangling.html#reading",
+    "href": "pages/data-wrangling.html#reading",
+    "title": "Wrangling",
+    "section": "Reading",
+    "text": "Reading\n\n\n\n\n\n\nWhat types of data files do you generate in your research?\n\n\n\n\n\n\nFirst, we need to access our data and store it in a variable.\nPandas has a function that allows us to read in an excel document: read_excel().\n\n# import pandas, aliased as pd\nimport pandas as pd\n\n# Import an Excel file called \"example\" from the data folder\ndf = pd.read_excel('data/example_proteins.xlsx', sheet_name='Sheet1')\n\n# Visualise the first few rows\nprint(df.head(2))\n\n          Protein  Molecular Weight (kDa)          Function  \\\n0  HBB_Hemoglobin                    64.5  Oxygen transport   \n1     ACTA1_Actin                    42.0    Cell structure   \n\n  Subcellular Location  \n0            Cytoplasm  \n1            Cytoplasm  \n\n\n\n# Visualise the first few rows\ndf.head(2)\n\n\n\n\n\n\n\n\nProtein\nMolecular Weight (kDa)\nFunction\nSubcellular Location\n\n\n\n\n0\nHBB_Hemoglobin\n64.5\nOxygen transport\nCytoplasm\n\n\n1\nACTA1_Actin\n42.0\nCell structure\nCytoplasm\n\n\n\n\n\n\n\nPandas has many other read functions for all types of data.\n\n\n\n\n\n\n# From a plain text document:\ndf = pd.read_table('data/example_proteins.txt', delimiter='\\t')\n\n# From a csv document:\ndf = pd.read_csv('data/example_proteins.csv')"
+  },
+  {
+    "objectID": "pages/data-wrangling.html#cleaning-columns",
+    "href": "pages/data-wrangling.html#cleaning-columns",
+    "title": "Wrangling",
+    "section": "Cleaning columns",
+    "text": "Cleaning columns\nCleaning standardises and simplifies a dataset.\nThis might involve adjusting column names, correcting data types, and separating pieces of information from one column into many.\nWe can access the column names for a dataframe using .columns.\n\nprint(df.columns)\n\nIndex(['Protein', 'Molecular Weight (kDa)', 'Function',\n       'Subcellular Location'],\n      dtype='object')\n\n\nWe can drop columns by name using the .drop() method.\n\ndf.drop('Subcellular Location', axis=1)\ndf.head(2)\n\n\n\n\n\n\n\n\nProtein\nMolecular Weight (kDa)\nFunction\nSubcellular Location\n\n\n\n\n0\nHBB_Hemoglobin\n64.5\nOxygen transport\nCytoplasm\n\n\n1\nACTA1_Actin\n42.0\nCell structure\nCytoplasm\n\n\n\n\n\n\n\nWe can access the column names for a dataframe using .columns.\n\nprint(df.columns)\n\nIndex(['Protein', 'Molecular Weight (kDa)', 'Function',\n       'Subcellular Location'],\n      dtype='object')\n\n\nWe can drop columns by name using the .drop() method.\n\ndf.drop('Subcellular Location', axis=1, inplace=True)\ndf.head(2)\n\n\n\n\n\n\n\n\nProtein\nMolecular Weight (kDa)\nFunction\n\n\n\n\n0\nHBB_Hemoglobin\n64.5\nOxygen transport\n\n\n1\nACTA1_Actin\n42.0\nCell structure\n\n\n\n\n\n\n\n\n\n\n\n\n\nExplore other methods available for DataFrame operations here.\n\n\n\n\n\n\nWe can update the column names for a dataframe by directly updating the .columns, or using the .rename() method.\n\ndf.columns = ['protein', 'molecular_weight_kda', 'function']\ndf.head(2)\n\n\n\n\n\n\n\n\nprotein\nmolecular_weight_kda\nfunction\n\n\n\n\n0\nHBB_Hemoglobin\n64.5\nOxygen transport\n\n\n1\nACTA1_Actin\n42.0\nCell structure\n\n\n\n\n\n\n\nWe can update the column names for a dataframe by directly updating the .columns, or using the .rename() method.\n\ndf.rename(columns={\n  'Protein': 'protein', \n  'Molecular Weight (kDa)': 'molecular_weight_kda', \n  'Function': 'function'}, inplace=True)\n       \ndf.head(2)\n\n\n\n\n\n\n\n\nprotein\nmolecular_weight_kda\nfunction\n\n\n\n\n0\nHBB_Hemoglobin\n64.5\nOxygen transport\n\n\n1\nACTA1_Actin\n42.0\nCell structure\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdopt variable naming conventions (all lowercase characters, separated by underscores) to make column names consistent and easy to access.\n\n\n\n\n\n\nTo select individual columns, we can then use [colname] or .colname.\n\n\n\n\ndf['protein']\n\n0                  HBB_Hemoglobin\n1                     ACTA1_Actin\n2                 COL1A1_Collagen\n3                     INS_Insulin\n4                     MYH7_Myosin\n5               CYC1_Cytochrome c\n6                   KRT18_Keratin\n7                     ALB_Albumin\n8                  TUBA1B_Tubulin\n9                   FTH1_Ferritin\n10                   CAT_Catalase\n11                    GAPDH_GAPDH\n12                 FGA_Fibrinogen\n13                    ELN_Elastin\n14                H1F0_Histone H1\n15                    LCT_Lactase\n16                       TP53_p53\n17              CTRC_Chymotrypsin\n18                   HSPA1A_HSP70\n19            AMY1A_Alpha-amylase\n20                 HK1_Hexokinase\n21        COL2A1_Collagen type II\n22                ACTB_Beta-actin\n23                 TTN_Troponin T\n24                  UBB_Ubiquitin\n25                  LAMA2_Laminin\n26                 ITGB1_Integrin\n27            PRDX1_Peroxiredoxin\n28                CASP3_Caspase-3\n29                      SOD1_SOD1\n30                 TF_Transferrin\n31                   GCG_Glucagon\n32                    F2_Thrombin\n33             NEFH_Neurofilament\n34               CALM1_Calmodulin\n35    PYGM_Glycogen phosphorylase\n36               HRAS_Ras protein\n37       COL3A1_Collagen type III\n38        COL4A1_Collagen type IV\n39           PKLR_Pyruvate kinase\n40           AK1_Adenylate kinase\n41         COL5A1_Collagen type V\n42        COL6A1_Collagen type VI\n43           LAMB2_Laminin beta 2\n44         ND1_NADH dehydrogenase\n45            ATP5F1_ATP synthase\nName: protein, dtype: object\n\n\n\n\n\n\ndf.protein\n\n0                  HBB_Hemoglobin\n1                     ACTA1_Actin\n2                 COL1A1_Collagen\n3                     INS_Insulin\n4                     MYH7_Myosin\n5               CYC1_Cytochrome c\n6                   KRT18_Keratin\n7                     ALB_Albumin\n8                  TUBA1B_Tubulin\n9                   FTH1_Ferritin\n10                   CAT_Catalase\n11                    GAPDH_GAPDH\n12                 FGA_Fibrinogen\n13                    ELN_Elastin\n14                H1F0_Histone H1\n15                    LCT_Lactase\n16                       TP53_p53\n17              CTRC_Chymotrypsin\n18                   HSPA1A_HSP70\n19            AMY1A_Alpha-amylase\n20                 HK1_Hexokinase\n21        COL2A1_Collagen type II\n22                ACTB_Beta-actin\n23                 TTN_Troponin T\n24                  UBB_Ubiquitin\n25                  LAMA2_Laminin\n26                 ITGB1_Integrin\n27            PRDX1_Peroxiredoxin\n28                CASP3_Caspase-3\n29                      SOD1_SOD1\n30                 TF_Transferrin\n31                   GCG_Glucagon\n32                    F2_Thrombin\n33             NEFH_Neurofilament\n34               CALM1_Calmodulin\n35    PYGM_Glycogen phosphorylase\n36               HRAS_Ras protein\n37       COL3A1_Collagen type III\n38        COL4A1_Collagen type IV\n39           PKLR_Pyruvate kinase\n40           AK1_Adenylate kinase\n41         COL5A1_Collagen type V\n42        COL6A1_Collagen type VI\n43           LAMB2_Laminin beta 2\n44         ND1_NADH dehydrogenase\n45            ATP5F1_ATP synthase\nName: protein, dtype: object\n\n\n\n\n\n\n\n\n\n\n\n\nThe . notation only works when the column names do not have spaces."
+  },
+  {
+    "objectID": "pages/data-wrangling.html#cleaning-data-types",
+    "href": "pages/data-wrangling.html#cleaning-data-types",
+    "title": "Wrangling",
+    "section": "Cleaning data types",
+    "text": "Cleaning data types\nThe dtype of each column dictates what operations we can do with it’s data.\n\nprint(df.dtypes)\n\nprotein                  object\nmolecular_weight_kda     object\nfunction                 object\nsubcellular_location     object\nexpression_log2         float64\ntime_h                    int64\ndonor_id                 object\ndtype: object\n\n\nWe can convert between data types using the .astype() method.\n\ndf['molecular_weight_kda'].astype(float)\n\nprint(df.dtypes)\n\nprotein                  object\nmolecular_weight_kda     object\nfunction                 object\nsubcellular_location     object\nexpression_log2         float64\ntime_h                    int64\ndonor_id                 object\ndtype: object\n\n\nThe dtype of each column dictates what operations we can do with it’s data.\n\nprint(df.dtypes)\n\nprotein                  object\nmolecular_weight_kda     object\nfunction                 object\nsubcellular_location     object\nexpression_log2         float64\ntime_h                    int64\ndonor_id                 object\ndtype: object\n\n\nWe can convert between data types using the .astype() method.\n\ndf['molecular_weight_kda'] = df['molecular_weight_kda'].astype(float)\n\nprint(df.dtypes)\n\nprotein                  object\nmolecular_weight_kda    float64\nfunction                 object\nsubcellular_location     object\nexpression_log2         float64\ntime_h                    int64\ndonor_id                 object\ndtype: object\n\n\nOften string data are composites joined by one or more delimiters. To use these data elements we need to separate elements into different columns using the .str and .split methods.\n\n\n\ndf['protein']\n\n0               HBB_Hemoglobin\n1                  ACTA1_Actin\n2              COL1A1_Collagen\n3                  INS_Insulin\n4                  MYH7_Myosin\n                ...           \n685     COL5A1_Collagen type V\n686    COL6A1_Collagen type VI\n687       LAMB2_Laminin beta 2\n688     ND1_NADH dehydrogenase\n689        ATP5F1_ATP synthase\nName: protein, Length: 690, dtype: object\n\n\n\n\ndf['protein'].str.split('_')\n\n0               [HBB, Hemoglobin]\n1                  [ACTA1, Actin]\n2              [COL1A1, Collagen]\n3                  [INS, Insulin]\n4                  [MYH7, Myosin]\n                  ...            \n685     [COL5A1, Collagen type V]\n686    [COL6A1, Collagen type VI]\n687       [LAMB2, Laminin beta 2]\n688     [ND1, NADH dehydrogenase]\n689        [ATP5F1, ATP synthase]\nName: protein, Length: 690, dtype: object"
+  },
+  {
+    "objectID": "pages/data-wrangling.html#cleaning-composite-data",
+    "href": "pages/data-wrangling.html#cleaning-composite-data",
+    "title": "Wrangling",
+    "section": "Cleaning composite data",
+    "text": "Cleaning composite data\nOften string data are composites joined by one or more delimiters. To use these data elements we need to separate elements into different columns using the .str and .split methods.\n\n# Assign split strings to separate columns using 'expand' keyword\ndf[['protein_name', 'gene']] = df['protein'].str.split('_', expand=True)\n\ndf.head(2)\n\n\n\n\n\n\n\n\nprotein\nmolecular_weight_kda\nfunction\nsubcellular_location\nexpression_log2\ntime_h\ndonor_id\nprotein_name\ngene\n\n\n\n\n0\nHBB_Hemoglobin\n64.5\nOxygen transport\nCytoplasm\n0.111781\n2\nA17362\nHBB\nHemoglobin\n\n\n1\nACTA1_Actin\n42.0\nCell structure\nCytoplasm\n0.203740\n2\nA17362\nACTA1\nActin\n\n\n\n\n\n\n\n\ndf.to_csv(f'data/clean_data.csv')\n\n\n\n\n\n\n\nThese operations will be very dataset specific, and each dataset will likely require a combination of approaches."
+  },
+  {
+    "objectID": "pages/data-wrangling.html#in-practice",
+    "href": "pages/data-wrangling.html#in-practice",
+    "title": "Wrangling",
+    "section": "In practice",
+    "text": "In practice\n\n\n\n\n\n\nExercises\n\n\n\n3.1 Reading and cleaning"
+  },
+  {
+    "objectID": "pages/data-processing.html#sorting",
+    "href": "pages/data-processing.html#sorting",
+    "title": "Tidying",
+    "section": "Sorting",
+    "text": "Sorting\nWe can sort a dataframe based on the values in one (or more) columns by giving a list to .sort_values().\n\ndf.sort_values(['protein', 'donor_id', 'time_h'], inplace=True)\ndf.head(5)\n\n\n\n\n\n\n\n\nUnnamed: 0\nprotein\nmolecular_weight_kda\nfunction\nsubcellular_location\nexpression_log2\ntime_h\ndonor_id\nprotein_name\ngene\n\n\n\n\n1\n1\nACTA1_Actin\n42.0\nCell structure\nCytoplasm\n0.203740\n2\nA17362\nACTA1\nActin\n\n\n139\n139\nACTA1_Actin\n42.0\nCell structure\nCytoplasm\n2.120048\n4\nA17362\nACTA1\nActin\n\n\n277\n277\nACTA1_Actin\n42.0\nCell structure\nCytoplasm\n-4.341109\n6\nA17362\nACTA1\nActin\n\n\n415\n415\nACTA1_Actin\n42.0\nCell structure\nCytoplasm\n-2.328065\n8\nA17362\nACTA1\nActin\n\n\n553\n553\nACTA1_Actin\n42.0\nCell structure\nCytoplasm\n9.565341\n10\nA17362\nACTA1\nActin"
+  },
+  {
+    "objectID": "pages/data-processing.html#filtering-based-on-values",
+    "href": "pages/data-processing.html#filtering-based-on-values",
+    "title": "Tidying",
+    "section": "Filtering based on values",
+    "text": "Filtering based on values\nWe can select entries based on their value in a specific column using comparison operators like &gt; , &lt; and ==.\n\ndf[df['molecular_weight_kda'] &gt; 100].head(3)\n\n\n\n\n\n\n\n\nUnnamed: 0\nprotein\nmolecular_weight_kda\nfunction\nsubcellular_location\nexpression_log2\ntime_h\ndonor_id\nprotein_name\ngene\n\n\n\n\n2\n2\nCOL1A1_Collagen\n300.0\nStructural support\nExtracellular\nNaN\n2\nA17362\nCOL1A1\nCollagen\n\n\n4\n4\nMYH7_Myosin\n220.0\nMuscle contraction\nCytoplasm\n-1.274221\n2\nA17362\nMYH7\nMyosin\n\n\n9\n9\nFTH1_Ferritin\n474.0\nIron storage\nCytoplasm\n1.321842\n2\nA17362\nFTH1\nFerritin\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou can think about this as “the dataframe where the dataframe in the XX column is equal to YY”.\n\n\n\n\n\n\nWe can select entries based on their value in a specific column using comparison operators like &gt; , &lt; and ==.\n\ndf[df['molecular_weight_kda'] &gt; 100].head(3)\n\n\n\n\n\n\n\nNote that this is creating a view of the dataframe. To use the filtered version in other operations, you need to assign a new variable and create a copy.\n\n\n\n\n\n\n\nlen(df)\n\n690\n\n\n\nlen(df[df['molecular_weight_kda'] &gt; 100])\n\n210\n\n\n\nlen(df)\n\n690\n\n\n\nnew_dataframe = df[df['molecular_weight_kda'] &gt; 100].copy()\nlen(new_dataframe)\n\n210\n\n\nWe can select entries based on their value in a specific column using comparison operators like &gt; , &lt; and ==.\n\ndf[df['molecular_weight_kda'] &gt; 100].head(3)\n\n\n\n  \n\n\nWe can chain multiple filters using and (&) notion.\n\ndf[(df['molecular_weight_kda'] &gt; 100) & (df['subcellular_location'] != 'Cytoplasm')].head(2)\n\n\n\n\n\n\n\n\nUnnamed: 0\nprotein\nmolecular_weight_kda\nfunction\nsubcellular_location\nexpression_log2\ntime_h\ndonor_id\nprotein_name\ngene\n\n\n\n\n2\n2\nCOL1A1_Collagen\n300.0\nStructural support\nExtracellular\nNaN\n2\nA17362\nCOL1A1\nCollagen\n\n\n12\n12\nFGA_Fibrinogen\n340.0\nBlood clotting\nPlasma\n1.359425\n2\nA17362\nFGA\nFibrinogen"
+  },
+  {
+    "objectID": "pages/data-processing.html#handling-missing-values",
+    "href": "pages/data-processing.html#handling-missing-values",
+    "title": "Tidying",
+    "section": "Handling missing values",
+    "text": "Handling missing values\nWe can filter for rows containing missing values using .isna() or .isnull().\n\ndf[df['expression_log2'].isna()].head(3)\n\n\n\n\n\n\n\n\nUnnamed: 0\nprotein\nmolecular_weight_kda\nfunction\nsubcellular_location\nexpression_log2\ntime_h\ndonor_id\nprotein_name\ngene\n\n\n\n\n2\n2\nCOL1A1_Collagen\n300.0\nStructural support\nExtracellular\nNaN\n2\nA17362\nCOL1A1\nCollagen\n\n\n20\n20\nHK1_Hexokinase\n102.0\nGlycolysis\nCytoplasm\nNaN\n2\nA17362\nHK1\nHexokinase\n\n\n121\n121\nSOD1_SOD1\n32.5\nSuperoxide breakdown\nCytoplasm\nNaN\n2\nA39917\nSOD1\nSOD1\n\n\n\n\n\n\n\n\n\n  \n\n\nMissing values can be removed using .dropna().\n\ndf.dropna(axis=0, how='all', subset=['expression_log2']).head(2)\n\n\n\n\n\n\n\n\nUnnamed: 0\nprotein\nmolecular_weight_kda\nfunction\nsubcellular_location\nexpression_log2\ntime_h\ndonor_id\nprotein_name\ngene\n\n\n\n\n0\n0\nHBB_Hemoglobin\n64.5\nOxygen transport\nCytoplasm\n0.111781\n2\nA17362\nHBB\nHemoglobin\n\n\n1\n1\nACTA1_Actin\n42.0\nCell structure\nCytoplasm\n0.203740\n2\nA17362\nACTA1\nActin\n\n\n\n\n\n\n\nAlternatively, you may wish to fill missing values specifically using .fillna()\n\ndf.fillna(0, inplace=True) # Works on any datatype\ndf.head(3)\n\n\n\n\n\n\n\n\nUnnamed: 0\nprotein\nmolecular_weight_kda\nfunction\nsubcellular_location\nexpression_log2\ntime_h\ndonor_id\nprotein_name\ngene\n\n\n\n\n0\n0\nHBB_Hemoglobin\n64.5\nOxygen transport\nCytoplasm\n0.111781\n2\nA17362\nHBB\nHemoglobin\n\n\n1\n1\nACTA1_Actin\n42.0\nCell structure\nCytoplasm\n0.203740\n2\nA17362\nACTA1\nActin\n\n\n2\n2\nCOL1A1_Collagen\n300.0\nStructural support\nExtracellular\n0.000000\n2\nA17362\nCOL1A1\nCollagen\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas also provides some limited interpolation using .interpolate(), however purpose-built libraries provide more sophisticated options."
+  },
+  {
+    "objectID": "pages/data-processing.html#basic-arithmetic",
+    "href": "pages/data-processing.html#basic-arithmetic",
+    "title": "Tidying",
+    "section": "Basic arithmetic",
+    "text": "Basic arithmetic\nWe can do arithmetic on whole columns simultaneously, like calculating the mean or sum of numerical values using inbuilt functions or mathematical operators.\n\n\n  \n\n\n\ndf.count()\n\nUnnamed: 0              690\nprotein                 690\nmolecular_weight_kda    690\nfunction                690\nsubcellular_location    690\nexpression_log2         690\ntime_h                  690\ndonor_id                690\nprotein_name            690\ngene                    690\ndtype: int64\n\n\n\n\n  \n\n\n\ndf.mean()\n\nC:\\Users\\Dezerae\\AppData\\Local\\Temp\\ipykernel_13132\\3698961737.py:1: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.\n  df.mean()\n\n\nUnnamed: 0              344.500000\nmolecular_weight_kda    113.104348\nexpression_log2          -0.021831\ntime_h                    6.000000\ndtype: float64\n\n\nWe can do arithmetic on whole columns simultaneously, like calculating the mean or sum of numerical values using inbuilt functions or mathematical operators.\n\n\n\ndf['molecular_weight_kda']\n\n0       64.5\n1       42.0\n2      300.0\n3        5.8\n4      220.0\n       ...  \n685    184.0\n686    110.0\n687    210.0\n688     40.0\n689     55.0\nName: molecular_weight_kda, Length: 690, dtype: float64\n\n\n\n\ndf['molecular_weight_kda'] * 1000\n\n0       64500.0\n1       42000.0\n2      300000.0\n3        5800.0\n4      220000.0\n         ...   \n685    184000.0\n686    110000.0\n687    210000.0\n688     40000.0\n689     55000.0\nName: molecular_weight_kda, Length: 690, dtype: float64\n\n\n\n\nWe can do arithmetic on whole columns simultaneously, like calculating the mean or sum of numerical values using inbuilt functions or mathematical operators.\n\ndf['mw_daltons'] = df['molecular_weight_kda'] * 1000\ndf.head(3)\n\n\n\n\n\n\n\n\nUnnamed: 0\nprotein\nmolecular_weight_kda\nfunction\nsubcellular_location\nexpression_log2\ntime_h\ndonor_id\nprotein_name\ngene\nmw_daltons\n\n\n\n\n0\n0\nHBB_Hemoglobin\n64.5\nOxygen transport\nCytoplasm\n0.111781\n2\nA17362\nHBB\nHemoglobin\n64500.0\n\n\n1\n1\nACTA1_Actin\n42.0\nCell structure\nCytoplasm\n0.203740\n2\nA17362\nACTA1\nActin\n42000.0\n\n\n2\n2\nCOL1A1_Collagen\n300.0\nStructural support\nExtracellular\n0.000000\n2\nA17362\nCOL1A1\nCollagen\n300000.0"
+  },
+  {
+    "objectID": "pages/data-processing.html#operating-on-groups",
+    "href": "pages/data-processing.html#operating-on-groups",
+    "title": "Tidying",
+    "section": "Operating on groups",
+    "text": "Operating on groups\nWhat if we want to perform arithmetic not on the whole dataframe, but on subsets? We can operate on chunks of a dataframe simultaneously using groupby.\n\n\n\n\n\n\nloc_counts = df.groupby(['subcellular_location']).count()[['protein']]\nloc_counts\n\n\n\n\n\n\n\n\n\n\nprotein\n\n\nsubcellular_location\n\n\n\n\n\nCytoplasm\n315\n\n\nExtracellular\n135\n\n\nMembrane\n15\n\n\n\n\n\n\n\nWhat if we want to perform arithmetic not on the whole dataframe, but on subsets? We can operate on chunks of a dataframe simultaneously using groupby.\n\n\n\n\n\n\n\n\n\n\n\nThink of this like creating filtered copies of the dataframe, conducting the operation, then combining them all back together again!\n\n\n\n\n\n\n\n\n\n\n\n\ngroupby is an iterator object which is not created until it is evaluated. Operations used with groupby create views and are not operating on the original dataframe.\n\n\n\n\n\n\nWe can access each chunk of the dataframe using a for loop:\n\nfor loc, data in df.groupby(['subcellular_location']):\n  print(\n    f'The average molecular weight of proteins in the {loc} is \\\n    {int(data[\"molecular_weight_kda\"].mean())} kDa.')\n\nThe average molecular weight of proteins in the Cytoplasm is     76 kDa.\nThe average molecular weight of proteins in the Extracellular is     277 kDa.\nThe average molecular weight of proteins in the Membrane is     88 kDa.\nThe average molecular weight of proteins in the Mitochondria is     35 kDa.\nThe average molecular weight of proteins in the Nucleus is     37 kDa.\nThe average molecular weight of proteins in the Peroxisome is     60 kDa.\nThe average molecular weight of proteins in the Plasma is     340 kDa.\nThe average molecular weight of proteins in the Secreted is     53 kDa."
+  },
+  {
+    "objectID": "pages/data-processing.html#in-practice",
+    "href": "pages/data-processing.html#in-practice",
+    "title": "Tidying",
+    "section": "In practice",
+    "text": "In practice\n\n\n\n\n\n\nExercises\n\n\n\n3.2 Filtering and arithmetic\n3.3 Grouped operations"
+  },
+  {
+    "objectID": "pages/data-polishing.html#combining",
+    "href": "pages/data-polishing.html#combining",
+    "title": "Polishing",
+    "section": "Combining",
+    "text": "Combining\nDataframes can be combined along the vertical axis using concat().\n\n\n\n\n\n\n\n\ndf1 = pd.DataFrame({'A': ['purple', 'red', 'orange'], \n                    'B': [1, 2, 3], \n                    'C': ['C0', 'C1', 'C2'],\n                    'D': ['dinosaur', 'drain', 'draw']})\ndf1\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n0\npurple\n1\nC0\ndinosaur\n\n\n1\nred\n2\nC1\ndrain\n\n\n2\norange\n3\nC2\ndraw\n\n\n\n\n\n\n\n\n\ndf2 = pd.DataFrame({'A': ['green', 'blue', 'yellow'], \n                    'B': [4, 5, 6], \n                    'C': ['C0', 'C1', 'C2'],\n                    'E': ['elephant', 'empty', 'easel']})\ndf2\n\n\n\n\n\n\n\n\nA\nB\nC\nE\n\n\n\n\n0\ngreen\n4\nC0\nelephant\n\n\n1\nblue\n5\nC1\nempty\n\n\n2\nyellow\n6\nC2\neasel\n\n\n\n\n\n\n\n\n\n\n\n\n# Concatenate the two DataFrames\nresult = pd.concat([df1, df2])\nresult\n\n\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\n0\npurple\n1\nC0\ndinosaur\nNaN\n\n\n1\nred\n2\nC1\ndrain\nNaN\n\n\n2\norange\n3\nC2\ndraw\nNaN\n\n\n0\ngreen\n4\nC0\nNaN\nelephant\n\n\n1\nblue\n5\nC1\nNaN\nempty\n\n\n2\nyellow\n6\nC2\nNaN\neasel\n\n\n\n\n\n\n\n\n\nDataframes can be combined along the horizontal axis using merge().\n\n\n\n\n\n\n# Merge the two DataFrames along rows\nmerged = pd.merge(df1, df2, on='C')\nmerged\n\n\n\n\n\n\n\n\nA_x\nB_x\nC\nD\nA_y\nB_y\nE\n\n\n\n\n0\npurple\n1\nC0\ndinosaur\ngreen\n4\nelephant\n\n\n1\nred\n2\nC1\ndrain\nblue\n5\nempty\n\n\n2\norange\n3\nC2\ndraw\nyellow\n6\neasel\n\n\n\n\n\n\n\n\n# Merge the two DataFrames along rows\nmerged = pd.merge(df1, df2, on='C', suffixes=['_df1', '_df2'])\nmerged\n\n\n\n\n\n\n\n\nA_df1\nB_df1\nC\nD\nA_df2\nB_df2\nE\n\n\n\n\n0\npurple\n1\nC0\ndinosaur\ngreen\n4\nelephant\n\n\n1\nred\n2\nC1\ndrain\nblue\n5\nempty\n\n\n2\norange\n3\nC2\ndraw\nyellow\n6\neasel\n\n\n\n\n\n\n\n\n# Merge the two DataFrames along rows\nmerged = pd.merge(df1, df2, on='C', suffixes=['_df1', '_df2'])\nmerged\n\n\n\n\n\n\n\nLearn more about the variety of join operations via the documentation."
+  },
+  {
+    "objectID": "pages/data-polishing.html#transforming",
+    "href": "pages/data-polishing.html#transforming",
+    "title": "Polishing",
+    "section": "Transforming",
+    "text": "Transforming\nDatasets often need to be transformed between wide and long form data.\n\n\n\n\n\nPandas provides this functionality in the form of pd.pivot for long to wide:\n\npd.pivot_table(\n        proteins, \n        index='Subcellular Location', \n        columns=['Function'], \n        values='Molecular Weight (kDa)' \n              )\n\n\n\n\n\n\n\nThe equivalent function for wide to long is pd.melt."
+  },
+  {
+    "objectID": "pages/data-polishing.html#writing",
+    "href": "pages/data-polishing.html#writing",
+    "title": "Polishing",
+    "section": "Writing",
+    "text": "Writing\nJust as we can read a variety of data types using pandas, we can similarly save pandas dataframes.\n\n\n\n\n\n\n# loc_counts.to_csv('data/example_grouped.csv')"
+  },
+  {
+    "objectID": "pages/data-polishing.html#in-practice",
+    "href": "pages/data-polishing.html#in-practice",
+    "title": "Polishing",
+    "section": "In practice",
+    "text": "In practice\n\n\n\n\n\n\nExercises\n\n\n\n3.4 Combining datasets"
+  },
+  {
+    "objectID": "pages/data-viz.html#seaborn-matplotlib",
+    "href": "pages/data-viz.html#seaborn-matplotlib",
+    "title": "Visualisation",
+    "section": "Seaborn 🫱🏻‍🫲🏻 Matplotlib",
+    "text": "Seaborn 🫱🏻‍🫲🏻 Matplotlib\nToday we will focus on getting comfortable using seaborn, which is a nice wrapper over the basic functionality provided by matplotlib.\n\n\n\n\n\n\nBoth matplotlib and seaborn come pre-installed with Anaconda.\n\n\n\n\n\n\nTo have access to the functionality of both libraries, we first need to import them. It is common to alias these libraries:\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n\n\n \n\n\nWe also need a dataset!\n\nimport pandas as pd\nproteins = pd.read_csv('data/example_proteins.csv')\n\nOnce imported, seaborn gives us access to many simple plots out of the box."
+  },
+  {
+    "objectID": "pages/data-viz.html#the-simple-scatterplot",
+    "href": "pages/data-viz.html#the-simple-scatterplot",
+    "title": "Visualisation",
+    "section": "The simple scatterplot",
+    "text": "The simple scatterplot\nLet’s start with a scatterplot, which is useful for visualising simple x,y datasets.\n\nsns.scatterplot(\n  data=proteins,\n  x='Molecular Weight (kDa)',\n  y='log(2)_expression',\n)\n\n\n\n&lt;Axes: xlabel='Molecular Weight (kDa)', ylabel='log(2)_expression'&gt;\n\n\n\n\n\n\n\n\n\nWe can add additional classifiers to separate the data by colour (hue) or style.\n\nsns.scatterplot(\n  data=proteins,\n  x='Molecular Weight (kDa)',\n  y='log(2)_expression',\n  hue='Time point (h)',\n  style='Donor',\n)\n\n\n\n&lt;Axes: xlabel='Molecular Weight (kDa)', ylabel='log(2)_expression'&gt;"
+  },
+  {
+    "objectID": "pages/data-viz.html#the-basic-boxplot",
+    "href": "pages/data-viz.html#the-basic-boxplot",
+    "title": "Visualisation",
+    "section": "The basic boxplot",
+    "text": "The basic boxplot\nSimilarly for a boxplot:\n\nsns.boxplot(\n  data=proteins,\n  x='Donor',\n  y='log(2)_expression',\n  hue='Time point (h)',\n)\n\n\n\n&lt;Axes: xlabel='Donor', ylabel='log(2)_expression'&gt;"
+  },
+  {
+    "objectID": "pages/data-viz.html#the-humble-histogram",
+    "href": "pages/data-viz.html#the-humble-histogram",
+    "title": "Visualisation",
+    "section": "The humble histogram",
+    "text": "The humble histogram\nAnd for a histogram:\n\nsns.displot(\n  data=proteins,\n  x='log(2)_expression',\n  hue='Time point (h)',\n  kind='hist'\n)\n\n\n\n\n\n\n\n\n\n\nAnd for a histogram:\n\nsns.displot(\n  data=proteins,\n  x='log(2)_expression',\n  hue='Time point (h)',\n  kind='kde'\n)"
+  },
+  {
+    "objectID": "pages/data-viz.html#the-lazy-lineplot",
+    "href": "pages/data-viz.html#the-lazy-lineplot",
+    "title": "Visualisation",
+    "section": "The lazy lineplot",
+    "text": "The lazy lineplot\nAnd for a lineplot:\n\nsns.lineplot(\n  data=proteins,\n  x='Time point (h)',\n  y='log(2)_expression',\n  hue='Donor'\n)\n\n\n\n&lt;Axes: xlabel='Time point (h)', ylabel='log(2)_expression'&gt;"
+  },
+  {
+    "objectID": "pages/data-viz.html#choosing-colours",
+    "href": "pages/data-viz.html#choosing-colours",
+    "title": "Visualisation",
+    "section": "Choosing colours",
+    "text": "Choosing colours\n\n\n\n\n\n\nWhy does colour matter?\n\n\n\n\n\n\nColours can help highlight patterns, distinguish categories, making visualisations more engaging and easier to interpret.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMatplotlib provides a variety of built-in color palettes for different types of data:\n\nCategorical: deep, muted, pastel, dark, colorblind\nSequential: Blues, Reds, Greens, Purples\nDiverging: coolwarm, RdBu, Spectral\n\n\nBuilt-in palettes can be accessed using the palette argument:\n\n\n\n\nsns.lineplot(\n  data=proteins_filtered,\n  x='Time point (h)',\n  y='log(2)_expression',\n  hue='Donor',\n  palette='tab10'\n)"
+  },
+  {
+    "objectID": "pages/data-viz.html#creating-a-custom-palette",
+    "href": "pages/data-viz.html#creating-a-custom-palette",
+    "title": "Visualisation",
+    "section": "Creating a custom palette",
+    "text": "Creating a custom palette\nFor more control, you can create a custom palette using a dictionary that maps specific categories to colours:\n\n# Define a custom palette\ncustom_palette = {\n  'A17362': '#28112B', \n  'A39917': '#BA324F', \n  'B24923': '#4BA3C3'\n  }\n\n# Apply the custom palette\nsns.lineplot(\n  data=proteins_filtered,\n  x='Time point (h)',\n  y='log(2)_expression',\n  hue='Donor',\n  palette=custom_palette\n)\n\n&lt;Axes: xlabel='Time point (h)', ylabel='log(2)_expression'&gt;"
+  },
+  {
+    "objectID": "pages/data-viz.html#in-practice",
+    "href": "pages/data-viz.html#in-practice",
+    "title": "Visualisation",
+    "section": "In practice",
+    "text": "In practice\n\n\n\n\n\n\nExercises\n\n\n\n4.1 Creating a simple visualisation\n4.2 Customising colour schemes"
+  },
+  {
+    "objectID": "pages/data-viz.html#makeovers-with-matplotlib",
+    "href": "pages/data-viz.html#makeovers-with-matplotlib",
+    "title": "Visualisation",
+    "section": "Makeovers with Matplotlib",
+    "text": "Makeovers with Matplotlib\nSo far, we have accepted the standard options that seaborn makes available to us.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHowever, ‘under the hood’ the figure is still created using matplotlib objects and often we need to return to matplotlib to style plot elements.\nMatplotlib is typically imported and aliased as plt:\n\nimport matplotlib.pyplot as plt"
+  },
+  {
+    "objectID": "pages/data-viz.html#the-canvas",
+    "href": "pages/data-viz.html#the-canvas",
+    "title": "Visualisation",
+    "section": "The canvas",
+    "text": "The canvas\nWe first need to understand how matplotlib structures a figure.\n\n\n\n\n\n\n Source: matplotlib"
+  },
+  {
+    "objectID": "pages/data-viz.html#styling",
+    "href": "pages/data-viz.html#styling",
+    "title": "Visualisation",
+    "section": "Styling",
+    "text": "Styling\nWe can then edit different parts of the visualisation using methods provided by the fig or axes objects.\n\n\n\nfig, ax = plt.subplots(figsize=(3, 3))\nsns.scatterplot(\n  data=proteins,\n  x='Molecular Weight (kDa)',\n  y='log(2)_expression',\n  hue='Donor',\n  palette=custom_palette,\n  s=100,\n)\nplt.ylabel('Log$_2$(abundance)')\nplt.xlabel('MW (kDa)', fontsize=15)\nax.set_yticks(\n  labels=[], \n  ticks=[-10, -5, 0, 5, 10])\nplt.legend(bbox_to_anchor=(1.0, 1.0))\nax.spines['right'].set_visible(False)\nax.spines['top'].set_visible(False)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIn most styling use cases, the plt and ax functions are interchangable."
+  },
+  {
+    "objectID": "pages/data-viz.html#multiple-panels",
+    "href": "pages/data-viz.html#multiple-panels",
+    "title": "Visualisation",
+    "section": "Multiple panels",
+    "text": "Multiple panels\nWe can create figure layouts using a variety of methods.\n\n\n\n# a figure with a single Axes\nfig, ax = plt.subplots()\n\n\n\n\n\n\n\n\n\n\n# a figure with multiple axes\nfig, axes = plt.subplots(2, 2)\n\n# Add to your axes by indexing\n# axes[0, 1]\n\n\n\n\n\n\n\n\n\n\n\nfig, axes = plt.subplot_mosaic([['left', 'right_top'],\n                               ['left', 'right_bottom']],\n                               figsize=(7, 7))"
+  },
+  {
+    "objectID": "pages/data-viz.html#saving",
+    "href": "pages/data-viz.html#saving",
+    "title": "Visualisation",
+    "section": "Saving",
+    "text": "Saving\nLast but not least - now we have a fabulous visualisation, it’s time to save it!\nMatplotlib offers a number of file formats, including png and svg.\n\nplt.rcParams['svg.fonttype']= 'none' # This makes our font editable in vector graphics formats e.g. Photoshop/Inkscape\n\nfig, ax = plt.subplots(figsize=(4, 4))\nsns.scatterplot(\n  data=proteins,\n  x='Molecular Weight (kDa)',\n  y='log(2)_expression',\n  hue='Donor',\n  palette=custom_palette,\n)\nplt.savefig('images/example_proteins.png')\nplt.savefig('images/example_proteins.svg')\nplt.show()"
+  },
+  {
+    "objectID": "pages/data-viz.html#in-practice-1",
+    "href": "pages/data-viz.html#in-practice-1",
+    "title": "Visualisation",
+    "section": "In practice",
+    "text": "In practice\n\n\n\n\n\n\nExercises\n\n\n\n4.3 Figure styling\n4.4 Multipanel figures"
+  },
+  {
+    "objectID": "pages/resources.html#where-to-from-here",
+    "href": "pages/resources.html#where-to-from-here",
+    "title": "RESOURCES",
+    "section": "Where to from here?",
+    "text": "Where to from here?\n\n\n\n\n\n\n\n\n\nFitting & statistics\n\nFit regression models, hypothesis testing\n🛠️ sciPy, statsmodels\n\n\n\n\n\n\n\n\n\n\n\nVersion control\n\nTrack changes, collaborate, publish\n🛠️ Git/GitHub, BitBucket\n\n\n\n\n\n\n\n\n\n\n\nAutomation\n\nAutomate workflows and pipelines\n🛠️ Snakemake, Apache Airflow"
+  },
+  {
+    "objectID": "pages/resources.html#resources",
+    "href": "pages/resources.html#resources",
+    "title": "RESOURCES",
+    "section": "Resources",
+    "text": "Resources\n\n🧱 RealPython\n\nTutorials and guides for Python learners at all levels.\n\n📚 Automate the Boring Stuff with Python\n\nOpen-access book by Al Sweigart, more fundamentals and beginner-friendly introduction to automation\n\n📚 Python for Data Analysis\n\nOpen-access book by Wes McKinney, great for building experience with data wrangling and visualisation\n\n🎓 Machine Learning Crash Course\n\nBeginner-friendly intro to machine learning with interactive lessons and coding exercises"
+  }
+]
