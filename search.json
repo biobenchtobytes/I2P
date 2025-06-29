@@ -396,7 +396,7 @@
     "href": "pages/data-viz.html#multiple-panels",
     "title": "Visualisation",
     "section": "Multiple panels",
-    "text": "Multiple panels\nWe can create figure layouts using a variety of methods.\n\n\n\n# a figure with a single Axes\nfig, ax = plt.subplots()\n\n\n\n\n\n\n\n\n\n\n# a figure with multiple axes\nfig, axes = plt.subplots(2, 2)\n\n# Add to your axes by indexing\n# axes[0, 1]\n\n\n\n\n\n\n\n\n\n\n\nfig, axes = plt.subplot_mosaic([['left', 'right_top'],\n                               ['left', 'right_bottom']],\n                               figsize=(7, 7))"
+    "text": "Multiple panels\nWe can create figure layouts using a variety of methods.\n\n# a figure with a single Axes\nfig, ax = plt.subplots()\n\n\n\n\n\n\n\n\n\n# a figure with multiple axes\nfig, axes = plt.subplots(2, 2)\n\n# Add to your axes by indexing\n# axes[0, 1]\n\n\n\n\n\n\n\n\n\nfig, axes = plt.subplot_mosaic([['left', 'right_top'],\n                               ['left', 'right_bottom']],\n                               figsize=(7, 7))"
   },
   {
     "objectID": "pages/data-viz.html#saving",
