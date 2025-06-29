@@ -479,8 +479,6 @@ ax.spines['top'].set_visible(False)
 
 We can create figure layouts using a variety of methods.
 
-:::: {.columns}
-::: {.column}
 ```{python}
 #| echo: True
 #| output: True
@@ -488,9 +486,6 @@ We can create figure layouts using a variety of methods.
 # a figure with a single Axes
 fig, ax = plt.subplots()
 ```
-:::
-
-::: {.column}
 ```{python}
 #| echo: True
 #| output: True
@@ -501,8 +496,6 @@ fig, axes = plt.subplots(2, 2)
 # Add to your axes by indexing
 # axes[0, 1]
 ```
-:::
-::::
 
 ```{python}
 #| echo: True
