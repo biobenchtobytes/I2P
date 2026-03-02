@@ -1,7 +1,7 @@
 # RESOURCES {.unnumbered}
 
 
-## Where to from here?
+## Build you skill base
 
 ::: {.columns}
 ::: {.column width="20%"}
@@ -60,4 +60,20 @@ Open-access book by Wes McKinney, great for building experience with data wrangl
 <h3 font-size=50pt align="left">🎓 [Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)</h3>
 
 Beginner-friendly intro to machine learning with interactive lessons and coding exercises 
+
+
+## Where to from here? 🤖 AI Acceleration
+
+<h3 font-size=50pt align="left">🎓 [Agentic AI for Python Course](https://training.talkpython.fm/courses/agentic-ai-programming-for-python)</h3>
+
+Learn to treat AI as part of your development team
+
+<h3 font-size=50pt align="left">📝 [The Beginner’s Guide to AI Agentic Programming](https://medium.com/@Rohan_Dutt/the-beginners-guide-to-ai-agentic-programming-with-python-code-91a772f8827f)</h3>
+
+Practice AI agentic programming with practical Python examples
+
+<h3 font-size=50pt align="left">🎥 [Using the AI Coding Editor Cursor](https://realpython.com/videos/tips-using-ai-editor-cursor-overview/)</h3>
+
+A standalone editor based on VSCode with a multi-agent interface and Composer model for fast, agentic coding
+
 
