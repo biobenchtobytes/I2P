@@ -707,14 +707,14 @@
     "href": "pages/resources.html",
     "title": "RESOURCES",
     "section": "",
-    "text": "Build you skill base",
+    "text": "Build your skill base",
     "crumbs": [
       "RESOURCES"
     ]
   },
   {
-    "objectID": "pages/resources.html#build-you-skill-base",
-    "href": "pages/resources.html#build-you-skill-base",
+    "objectID": "pages/resources.html#build-your-skill-base",
+    "href": "pages/resources.html#build-your-skill-base",
     "title": "RESOURCES",
     "section": "",
     "text": "Fitting & statistics\n\nFit regression models, hypothesis testing\n🛠️ sciPy, statsmodels\n\n\n\n\n\n\n\n\n\n\n\nVersion control\n\nTrack changes, collaborate, publish\n🛠️ Git/GitHub, BitBucket\n\n\n\n\n\n\n\n\n\n\n\nAutomation\n\nAutomate workflows and pipelines\n🛠️ Snakemake, Apache Airflow",
@@ -733,11 +733,11 @@
     ]
   },
   {
-    "objectID": "pages/resources.html#where-to-from-here-ai-acceleration",
-    "href": "pages/resources.html#where-to-from-here-ai-acceleration",
+    "objectID": "pages/resources.html#accelerate-with-ai",
+    "href": "pages/resources.html#accelerate-with-ai",
     "title": "RESOURCES",
-    "section": "Where to from here? 🤖 AI Acceleration",
-    "text": "Where to from here? 🤖 AI Acceleration\n\n🎓 Agentic AI for Python Course\n\nLearn to treat AI as part of your development team\n\n📝 The Beginner’s Guide to AI Agentic Programming\n\nPractice AI agentic programming with practical Python examples\n\n🎥 Using the AI Coding Editor Cursor\n\nA standalone editor based on VSCode with a multi-agent interface and Composer model for fast, agentic coding",
+    "section": "🤖 Accelerate with AI",
+    "text": "🤖 Accelerate with AI\n\n🎓 Agentic AI for Python Course\n\nLearn to treat AI as part of your development team\n\n📝 The Beginner’s Guide to AI Agentic Programming\n\nPractice AI agentic programming with practical Python examples\n\n🎥 Using the AI Coding Editor Cursor\n\nA standalone editor based on VSCode with a multi-agent interface and Composer model for fast, agentic coding",
     "crumbs": [
       "RESOURCES"
     ]

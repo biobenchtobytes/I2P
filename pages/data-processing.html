@@ -301,7 +301,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="sorting" class="level2">
 <h2 class="anchored" data-anchor-id="sorting">Sorting</h2>
 <p>We can sort a dataframe based on the values in one (or more) columns by giving a list to <code>.sort_values()</code>.</p>
-<div id="dcea586b" class="cell" data-execution_count="2">
+<div id="6b9fc350" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>df.sort_values([<span class="st">'protein'</span>, <span class="st">'donor_id'</span>, <span class="st">'time_h'</span>], inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
@@ -400,7 +400,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="filtering-based-on-values" class="level2">
 <h2 class="anchored" data-anchor-id="filtering-based-on-values">Filtering based on values</h2>
 <p>We can select entries based on their value in a specific column using <em>comparison operators</em> like <code>&gt;</code> , <code>&lt;</code> and <code>==</code>.</p>
-<div id="76346ffd" class="cell" data-execution_count="4">
+<div id="b2334940" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df[df[<span class="st">'molecular_weight_kda'</span>] <span class="op">&gt;</span> <span class="dv">100</span>].head(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <div>
@@ -482,7 +482,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>We can select entries based on their value in a specific column using <em>comparison operators</em> like <code>&gt;</code> , <code>&lt;</code> and <code>==</code>.</p>
-<div id="5df030ba" class="cell" data-execution_count="5">
+<div id="48583f3f" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df[df[<span class="st">'molecular_weight_kda'</span>] <span class="op">&gt;</span> <span class="dv">100</span>].head(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="callout callout-style-default callout-important callout-empty-content callout-titled">
@@ -498,25 +498,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </div>
 </div>
-<div id="68c8af4f" class="cell" data-execution_count="6">
+<div id="52819fdb" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>690</code></pre>
 </div>
 </div>
-<div id="817a788c" class="cell" data-execution_count="7">
+<div id="f8c6c0bd" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(df[df[<span class="st">'molecular_weight_kda'</span>] <span class="op">&gt;</span> <span class="dv">100</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>210</code></pre>
 </div>
 </div>
-<div id="d501e6f2" class="cell" data-execution_count="8">
+<div id="2d37fcd9" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>690</code></pre>
 </div>
 </div>
-<div id="21d5d8b1" class="cell" data-execution_count="9">
+<div id="e353e7df" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>new_dataframe <span class="op">=</span> df[df[<span class="st">'molecular_weight_kda'</span>] <span class="op">&gt;</span> <span class="dv">100</span>].copy()</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(new_dataframe)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
@@ -524,16 +524,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>We can select entries based on their value in a specific column using <em>comparison operators</em> like <code>&gt;</code> , <code>&lt;</code> and <code>==</code>.</p>
-<div id="366b5b37" class="cell" data-execution_count="10">
+<div id="21dd2381" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df[df[<span class="st">'molecular_weight_kda'</span>] <span class="op">&gt;</span> <span class="dv">100</span>].head(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="78374816" class="cell" data-execution_count="11">
+<div id="19c0f925" class="cell" data-execution_count="11">
 <div class="cell-output cell-output-stdout">
 <pre><code>  </code></pre>
 </div>
 </div>
 <p>We can chain multiple filters using <code>and</code> (<code>&amp;</code>) notion.</p>
-<div id="6fa0ac23" class="cell" data-execution_count="12">
+<div id="f383dc78" class="cell" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df[(df[<span class="st">'molecular_weight_kda'</span>] <span class="op">&gt;</span> <span class="dv">100</span>) <span class="op">&amp;</span> (df[<span class="st">'subcellular_location'</span>] <span class="op">!=</span> <span class="st">'Cytoplasm'</span>)].head(<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <div>
@@ -592,7 +592,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="handling-missing-values" class="level2">
 <h2 class="anchored" data-anchor-id="handling-missing-values">Handling missing values</h2>
 <p>We can filter for rows containing missing values using <code>.isna()</code> or <code>.isnull()</code>.</p>
-<div id="3406b3e4" class="cell" data-execution_count="13">
+<div id="3a1ad485" class="cell" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df[df[<span class="st">'expression_log2'</span>].isna()].head(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <div>
@@ -660,13 +660,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="735bc2a8" class="cell" data-execution_count="14">
+<div id="83c71083" class="cell" data-execution_count="14">
 <div class="cell-output cell-output-stdout">
 <pre><code>  </code></pre>
 </div>
 </div>
 <p>Missing values can be removed using <code>.dropna()</code>.</p>
-<div id="2aa362a0" class="cell" data-execution_count="15">
+<div id="73bc5bcc" class="cell" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df.dropna(axis<span class="op">=</span><span class="dv">0</span>, how<span class="op">=</span><span class="st">'all'</span>, subset<span class="op">=</span>[<span class="st">'expression_log2'</span>]).head(<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <div>
@@ -722,7 +722,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Alternatively, you may wish to fill missing values specifically using <code>.fillna()</code></p>
-<div id="1d2c002c" class="cell" data-execution_count="16">
+<div id="dc447bd5" class="cell" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df.fillna(<span class="dv">0</span>, inplace<span class="op">=</span><span class="va">True</span>) <span class="co"># Works on any datatype</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
@@ -808,12 +808,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="basic-arithmetic" class="level2">
 <h2 class="anchored" data-anchor-id="basic-arithmetic">Basic arithmetic</h2>
 <p>We can do arithmetic on whole columns simultaneously, like calculating the <code>mean</code> or <code>sum</code> of numerical values using inbuilt functions or mathematical operators.</p>
-<div id="a9e2bfaa" class="cell" data-execution_count="17">
+<div id="78c3aaad" class="cell" data-execution_count="17">
 <div class="cell-output cell-output-stdout">
 <pre><code>  </code></pre>
 </div>
 </div>
-<div id="0d096741" class="cell" data-execution_count="18">
+<div id="d0823697" class="cell" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df.count()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>Unnamed: 0              690
@@ -829,12 +829,12 @@ gene                    690
 dtype: int64</code></pre>
 </div>
 </div>
-<div id="fd9276ba" class="cell" data-execution_count="19">
+<div id="f2c3eb87" class="cell" data-execution_count="19">
 <div class="cell-output cell-output-stdout">
 <pre><code>  </code></pre>
 </div>
 </div>
-<div id="be71aa38" class="cell" data-execution_count="20">
+<div id="84224314" class="cell" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>df.mean(numeric_only<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>Unnamed: 0              344.500000
@@ -847,7 +847,7 @@ dtype: float64</code></pre>
 <p>We can do arithmetic on whole columns simultaneously, like calculating the <code>mean</code> or <code>sum</code> of numerical values using inbuilt functions or mathematical operators.</p>
 <div class="columns">
 <div class="column" style="width:45%;">
-<div id="a181f042" class="cell" data-execution_count="21">
+<div id="9f51e596" class="cell" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'molecular_weight_kda'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="21">
 <pre><code>0       64.5
@@ -865,7 +865,7 @@ Name: molecular_weight_kda, Length: 690, dtype: float64</code></pre>
 </div>
 </div>
 </div><div class="column" style="width:55%;">
-<div id="a6e55004" class="cell" data-execution_count="22">
+<div id="4f3b6892" class="cell" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'molecular_weight_kda'</span>] <span class="op">*</span> <span class="dv">1000</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <pre><code>0       64500.0
@@ -885,7 +885,7 @@ Name: molecular_weight_kda, Length: 690, dtype: float64</code></pre>
 </div>
 </div>
 <p>We can do arithmetic on whole columns simultaneously, like calculating the <code>mean</code> or <code>sum</code> of numerical values using inbuilt functions or mathematical operators.</p>
-<div id="176a5245" class="cell" data-execution_count="23">
+<div id="32ed0fb8" class="cell" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'mw_daltons'</span>] <span class="op">=</span> df[<span class="st">'molecular_weight_kda'</span>] <span class="op">*</span> <span class="dv">1000</span></span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
@@ -967,11 +967,11 @@ Name: molecular_weight_kda, Length: 690, dtype: float64</code></pre>
 <p><img src="images/groupby.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
 </figure>
 </div>
-<div id="7214ce8e" class="cell" data-execution_count="24">
+<div id="71deba87" class="cell" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>loc_counts <span class="op">=</span> df.groupby([<span class="st">'subcellular_location'</span>]).count()[[<span class="st">'protein'</span>]]</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>loc_counts</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="77c506d6" class="cell" data-execution_count="25">
+<div id="04947c8a" class="cell" data-execution_count="25">
 <div class="cell-output cell-output-display" data-execution_count="25">
 <div>
 
@@ -1039,7 +1039,7 @@ Name: molecular_weight_kda, Length: 690, dtype: float64</code></pre>
 </div>
 </div>
 <p>We can access each <em>chunk</em> of the dataframe using a <code>for</code> loop:</p>
-<div id="0de6e745" class="cell" data-execution_count="26">
+<div id="3039beb5" class="cell" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> loc, data <span class="kw">in</span> df.groupby([<span class="st">'subcellular_location'</span>]):</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(</span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f'The average molecular weight of proteins in the </span><span class="sc">{</span>loc<span class="sc">}</span><span class="ss"> is </span><span class="op">\</span></span>

@@ -304,7 +304,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <code>my_tuple = (val1, 'val2', 3)</code>
 </p>
 <p>These collections can be created directly using their parentheses. You can also use the equivalent built-in function to convert between collection types:</p>
-<div id="e991bd65" class="cell" data-execution_count="1">
+<div id="74d3b830" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">9</span>, <span class="dv">27</span>]</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">9</span>, <span class="dv">27</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="bu">list</span>(b)</span>
@@ -331,7 +331,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </div>
 </div>
-<div id="818a65d9" class="cell" data-execution_count="2">
+<div id="b4d7345e" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">9</span>, <span class="dv">27</span>]</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>a[<span class="dv">0</span>] <span class="op">=</span> <span class="dv">2</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -339,28 +339,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[2, 3, 9, 27]</code></pre>
 </div>
 </div>
-<div id="20314f22" class="cell" data-execution_count="3">
+<div id="71d13369" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>a.append(<span class="dv">27</span><span class="op">*</span><span class="dv">3</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[2, 3, 9, 27, 81]</code></pre>
 </div>
 </div>
-<div id="8094e37d" class="cell" data-execution_count="4">
+<div id="0a88a646" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>a.remove(a[<span class="op">-</span><span class="dv">2</span>])</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[2, 3, 9, 81]</code></pre>
 </div>
 </div>
-<div id="29a5aad8" class="cell" data-execution_count="5">
+<div id="a01f7336" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>a[<span class="dv">0</span>:<span class="dv">2</span>] <span class="op">=</span> <span class="st">'H'</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>['H', 9, 81]</code></pre>
 </div>
 </div>
-<div id="7f9170aa" class="cell" data-execution_count="6">
+<div id="b06b8894" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> (<span class="st">'G'</span>,<span class="st">'C'</span>,<span class="st">'A'</span>,<span class="st">'T'</span>)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(c[<span class="dv">0</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -368,7 +368,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>However, remember they are immutable:</p>
-<div id="88caaaa1" class="cell" data-execution_count="7">
+<div id="bb6b8a66" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>c[<span class="dv">2</span>] <span class="op">=</span> <span class="st">'hello'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <div class="ansi-escaped-output">
@@ -382,7 +382,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Strings are essentially a <code>tuple</code> of characters that can be sliced and indexed.</p>
-<div id="97de96b1" class="cell" data-execution_count="8">
+<div id="c2fccab7" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>my_seq <span class="op">=</span> <span class="st">'GAT CTA GTC TAG CTA'</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f'First: </span><span class="sc">{</span>my_seq[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">'</span>, </span>
@@ -393,7 +393,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>However, remember they are immutable:</p>
-<div id="7d5fbe7b" class="cell" data-execution_count="9">
+<div id="83300ac7" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>my_seq[<span class="dv">3</span>] <span class="op">=</span> <span class="st">'g'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <div class="ansi-escaped-output">
@@ -419,7 +419,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </div>
 </div>
-<div id="f1dbe4d4" class="cell" data-execution_count="10">
+<div id="5bc37894" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>my_seq <span class="op">=</span> <span class="st">'GAT CTA GTC TAG CTA'</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'GTC'</span> <span class="kw">in</span> my_seq)</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'TAG'</span> <span class="kw">not</span> <span class="kw">in</span> my_seq)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -437,7 +437,7 @@ False</code></pre>
 </p>
 <p>Python gives you access to a range of mathematical operations applicable to sets, including <code>union</code>, <code>intersection</code>, and <code>difference</code>.</p>
 <p>Let’s look at sets in action:</p>
-<div id="645c9f3f" class="cell" data-execution_count="11">
+<div id="316848cb" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>s1 <span class="op">=</span> <span class="bu">set</span>([<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">10</span>])</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>s2 <span class="op">=</span> {<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>}</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -470,7 +470,7 @@ Intersection: {4, 6}</code></pre>
 </p>
 <p><code>Keys</code> must be unique and immutable, but <code>values</code> can be of any data type.</p>
 <p>Let’s see a few ways to add information to a dictionary:</p>
-<div id="9e55e695" class="cell" data-execution_count="12">
+<div id="d35d59b7" class="cell" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>my_dict <span class="op">=</span> <span class="bu">dict</span>([(<span class="st">'key1'</span>, <span class="st">'val1'</span>), (<span class="st">'key2'</span>, <span class="st">'val2'</span>), (<span class="st">'key3'</span>, <span class="st">'val3'</span>)])</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>new_dictionary <span class="op">=</span> <span class="bu">dict</span>(<span class="bu">zip</span>([<span class="st">'key1'</span>, <span class="st">'key2'</span>, <span class="st">'key3'</span>], [<span class="st">'val1'</span>, <span class="st">'val2'</span>, <span class="st">'val3'</span>]))</span>
@@ -483,7 +483,7 @@ Intersection: {4, 6}</code></pre>
 <span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>genes[<span class="st">'MYMK'</span>] <span class="op">=</span> <span class="fl">1.047</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>We can access the value associated with a key:</p>
-<div id="4315e025" class="cell" data-execution_count="13">
+<div id="d299a391" class="cell" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>genes <span class="op">=</span> {</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'HSP70A1A'</span>: <span class="fl">1.2548</span>,  <span class="st">'TMEM218'</span>:  <span class="fl">0.5273</span>, </span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'MYMK'</span>: <span class="op">-</span><span class="fl">0.4869</span>,  <span class="st">'SNAP23'</span>: <span class="fl">0.6749</span>, </span>
@@ -494,7 +494,7 @@ Intersection: {4, 6}</code></pre>
 </div>
 </div>
 <p>If you try to retrieve a key that doesn’t exist, you will receive a <code>KeyError</code>.</p>
-<div id="05dd41d9" class="cell" data-execution_count="14">
+<div id="d497e3c2" class="cell" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(genes[<span class="st">'HSP90'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <div class="ansi-escaped-output">
@@ -508,26 +508,26 @@ Intersection: {4, 6}</code></pre>
 </div>
 </div>
 <p>… unless you use the <code>.get()</code> method!</p>
-<div id="549bbff9" class="cell" data-execution_count="15">
+<div id="63d76e62" class="cell" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(genes.get(<span class="st">'HSP90'</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>None</code></pre>
 </div>
 </div>
 <p>You can get a list of <code>keys</code>, <code>values</code> and even matched <code>key</code>-<code>value</code> pairs.</p>
-<div id="a9824a68" class="cell" data-execution_count="16">
+<div id="e4b0b220" class="cell" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>genes.keys()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>dict_keys(['HSP70A1A', 'TMEM218', 'MYMK', 'SNAP23', 'TAF4'])</code></pre>
 </div>
 </div>
-<div id="771b5900" class="cell" data-execution_count="17">
+<div id="451e161e" class="cell" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>genes.values()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
 <pre><code>dict_values([1.2548, 0.5273, -0.4869, 0.6749, -2.6487])</code></pre>
 </div>
 </div>
-<div id="2e0e676a" class="cell" data-execution_count="18">
+<div id="6d6b862b" class="cell" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>genes.items()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>dict_items([('HSP70A1A', 1.2548), ('TMEM218', 0.5273), ('MYMK', -0.4869), ('SNAP23', 0.6749), ('TAF4', -2.6487)])</code></pre>

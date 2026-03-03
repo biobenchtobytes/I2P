@@ -293,12 +293,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 <p>Values are <em>assigned</em> to a unique variable name using the <code>=</code> operator, where the name of the variable is on the left and the variable’s value is on the right.</p>
-<div id="6d8d7a55" class="cell" data-execution_count="1">
+<div id="b6af3897" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>my_name <span class="op">=</span> <span class="st">"Dezerae"</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>my_age <span class="op">=</span> <span class="dv">628</span> <span class="op">-</span> <span class="dv">594</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>You can see what python has stored for a given variable by passing it to the <code>print()</code> function:</p>
-<div id="13e84f4a" class="cell" data-execution_count="2">
+<div id="c1332b78" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>my_name <span class="op">=</span> <span class="st">"Dezerae"</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(my_name)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -374,7 +374,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="numerical-operations">Numerical operations</h2>
 <p>Numerical variables behave (mostly!) as you would expect.</p>
 <p>We can perform mathematical operations with <code>int</code> and/or <code>float</code> variables as if they were values.</p>
-<div id="2e59a142" class="cell" data-execution_count="3">
+<div id="f4d007ef" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">11</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'half </span><span class="sc">{</span>x<span class="sc">}</span><span class="ss"> is'</span>, x <span class="op">/</span> <span class="fl">2.0</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'</span><span class="sc">{</span>x<span class="sc">}</span><span class="ss"> squared is'</span>, x <span class="op">**</span> <span class="dv">2</span>)</span>
@@ -404,7 +404,7 @@ one more than 11 is 12
 <section id="string-operations" class="level2">
 <h2 class="anchored" data-anchor-id="string-operations">String operations</h2>
 <p>Strings can also be manipulated by the <code>+</code> and <code>*</code> operators.</p>
-<div id="4fd1cc97" class="cell" data-execution_count="4">
+<div id="6cbe33c1" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>my_name <span class="op">=</span> <span class="st">'Dezerae'</span> <span class="op">*</span> <span class="dv">5</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'Cox'</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(my_name)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -425,7 +425,7 @@ one more than 11 is 12
 </div>
 </div>
 <p>Sometimes numbers become strings which need to be converted:</p>
-<div id="8843d871" class="cell" data-execution_count="5">
+<div id="ceaff721" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="dv">1</span> <span class="op">+</span> <span class="bu">int</span>(<span class="st">'2'</span>))</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">str</span>(<span class="dv">1</span>) <span class="op">+</span> <span class="st">'2'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -462,7 +462,7 @@ one more than 11 is 12
 
 </div>
 </div>
-<div id="996379dc" class="cell" data-execution_count="6">
+<div id="acbc3b8f" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>variable_one <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>variable_two <span class="op">=</span> <span class="dv">5</span> <span class="op">*</span> variable_one</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>variable_one <span class="op">=</span> <span class="dv">2</span></span>
@@ -484,19 +484,19 @@ one more than 11 is 12
 
 </div>
 </div>
-<div id="23228ec5" class="cell" data-execution_count="7">
+<div id="107dcc8e" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"string to float:"</span>, <span class="bu">float</span>(<span class="st">"3.4"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>string to float: 3.4</code></pre>
 </div>
 </div>
-<div id="4580f0e8" class="cell" data-execution_count="8">
+<div id="3a33581c" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"float to int:"</span>, <span class="bu">int</span>(<span class="fl">3.4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>float to int: 3</code></pre>
 </div>
 </div>
-<div id="8aa3c231" class="cell" data-execution_count="9">
+<div id="06ed40a6" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"string to float:"</span>, <span class="bu">float</span>(<span class="st">"Hello world!"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <div class="ansi-escaped-output">
