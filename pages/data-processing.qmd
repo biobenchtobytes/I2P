@@ -155,7 +155,7 @@ print('  ')
 
 ```{python}
 #| echo: True
-df.mean()
+df.mean(numeric_only=True)
 ```
 
 We can do arithmetic on whole columns simultaneously, like calculating the ```mean``` or ```sum``` of numerical values using inbuilt functions or mathematical operators.
