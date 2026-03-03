@@ -1,7 +1,7 @@
 # RESOURCES {.unnumbered}
 
 
-## Build you skill base
+## Build your skill base
 
 ::: {.columns}
 ::: {.column width="20%"}
@@ -62,7 +62,7 @@ Open-access book by Wes McKinney, great for building experience with data wrangl
 Beginner-friendly intro to machine learning with interactive lessons and coding exercises 
 
 
-## Where to from here? 🤖 AI Acceleration
+## 🤖 Accelerate with AI
 
 <h3 font-size=50pt align="left">🎓 [Agentic AI for Python Course](https://training.talkpython.fm/courses/agentic-ai-programming-for-python)</h3>
 
